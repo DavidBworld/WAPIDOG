@@ -158,22 +158,22 @@
     letter-spacing:0.1em;
     text-transform:uppercase;
     color:var(--ambre-l);
-    margin-bottom:18px;
+    margin-bottom:24px;
   }
   .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--ambre);}
   .hero h1{
     font-size:42px;
     line-height:1.08;
-    margin-bottom:18px;
+    margin-bottom:24px;
   }
   .hero h1 em{font-style:italic;color:var(--ambre-l);font-weight:400;}
   .hero p.lead{
     font-size:16px;
     color:#c4cfe0;
     max-width:460px;
-    margin-bottom:30px;
+    margin-bottom:40px;
   }
-  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:36px;}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:48px;}
   .btn-primary{
     background:var(--ambre);
     color:var(--nuit);
@@ -196,7 +196,7 @@
   .hero-proof{
     display:flex;
     gap:28px;
-    padding-top:24px;
+    padding-top:32px;
     border-top:1px solid rgba(255,255,255,0.15);
   }
   .proof-item{font-size:12px;color:#9aa7bd;}
@@ -501,29 +501,73 @@
     display:flex;align-items:center;justify-content:center;
   }
 
-  /* ===== ANNOTATIONS UX ===== */
-  .annot{
-    position:relative;
+
+
+  /* ===== EDUCATION & COMPORTEMENT ===== */
+  .education-section{background:var(--creme);}
+  .edu-intro{max-width:700px; margin-bottom:48px;}
+  .edu-intro h2{font-size:32px;margin-bottom:16px;}
+  .edu-intro p{color:var(--gris);font-size:16px;line-height:1.6;}
+  
+  .edu-blocs-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:64px;}
+  .edu-bloc{
+    background:var(--blanc);
+    border-radius:18px;
+    padding:32px;
+    border:1px solid var(--gris-clair);
   }
-  .annot-tag{
-    position:absolute;
-    background:var(--bleu);
-    color:white;
-    font-size:10px;
-    font-weight:700;
-    padding:3px 9px;
-    border-radius:5px;
-    z-index:50;
-    white-space:nowrap;
-    font-family:'Manrope',sans-serif;
+  .edu-bloc h3{font-size:20px;margin-bottom:4px;color:var(--nuit);}
+  .edu-bloc h4{font-size:13px;color:var(--ambre);text-transform:uppercase;margin-bottom:16px;letter-spacing:0.05em;font-weight:700;}
+  .edu-bloc p{font-size:14px;color:var(--gris);line-height:1.6;}
+  
+  .process-steps{
+    display:grid; grid-template-columns:1fr 1fr 1fr; gap:24px; margin-bottom:64px;
   }
-  .annot-tag::after{
-    content:"";
-    position:absolute;
-    bottom:-5px;left:10px;
-    border:5px solid transparent;
-    border-top-color:var(--bleu);
+  .process-step{
+    background:var(--blanc);
+    padding:32px 24px;
+    border-radius:16px;
+    border:1px solid var(--gris-clair);
   }
+  .process-step .num{
+    font-size:32px; font-weight:800; font-family:'Fraunces',serif;
+    color:var(--ambre); margin-bottom:16px;
+    line-height:1;
+  }
+  .process-step h4{font-size:16px; margin-bottom:8px;}
+  .process-step p{font-size:13px; color:var(--gris);line-height:1.5;}
+  
+  .tarifs-container{
+    max-width:680px; margin:0 auto;
+    background:var(--blanc); padding:40px; border-radius:24px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.03);
+    border:1px solid var(--gris-clair);
+  }
+  .tarif-row{
+    display:flex; justify-content:space-between; align-items:flex-end;
+    margin-bottom:16px; font-size:15px; position:relative;
+  }
+  .tarif-row::after{
+    content:''; position:absolute; bottom:6px; left:0; right:0;
+    border-bottom:1px dashed var(--gris-clair); z-index:1;
+  }
+  .tarif-row span{background:var(--blanc); position:relative; z-index:2;}
+  .tarif-row .t-name{padding-right:8px; font-weight:500; color:var(--nuit);}
+  .tarif-row .t-price{padding-left:8px; font-weight:700; color:var(--nuit);}
+  
+  .tarif-row.highlight{
+    background:rgba(231,136,8,0.1); 
+    padding:16px; 
+    border-radius:12px;
+    border:1px solid var(--ambre);
+    margin-bottom:24px;
+    align-items:center;
+  }
+  .tarif-row.highlight::after{display:none;}
+  .tarif-row.highlight span{background:transparent;}
+  
+  .tarifs-note{font-size:12px; color:#9aa7bd; margin-top:32px; text-align:center;}
+  .tarifs-cta{text-align:center; margin-top:32px;}
 
   /* ===== MOBILE SIM STYLES ===== */
   .device.mobile .site-header{padding:14px 18px;}
@@ -547,6 +591,34 @@
   .device.mobile .field-row{grid-template-columns:1fr;}
   .device.mobile .footer-grid{grid-template-columns:1fr 1fr;gap:24px;}
   .device.mobile .footer-bottom{flex-direction:column;}
+  .device.mobile .activites-row{flex-direction:column; overflow-x:visible;}
+  .device.mobile .activites-row .act-card{width:100%; min-width:0;}
+  .device.mobile .act-card .img{height:220px;}
+  .device.mobile .edu-intro h2{font-size:26px;}
+  .device.mobile .edu-blocs-grid{grid-template-columns:1fr; gap:16px; margin-bottom:48px;}
+  .device.mobile .process-steps{grid-template-columns:1fr; gap:16px; margin-bottom:48px;}
+  .device.mobile .tarifs-container{padding:24px;}
+  .device.mobile .tarif-row{font-size:13px; margin-bottom:12px;}
+  .device.mobile .tarif-row.highlight{padding:12px;}
+
+  /* Burger Menu CSS */
+  .mobile-menu-overlay {
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: var(--nuit);
+    z-index: 100;
+    display: flex; flex-direction: column; padding: 24px;
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  .mobile-menu-overlay.open {
+    opacity: 1; pointer-events: auto;
+  }
+  .mobile-menu-overlay .close-btn {
+    align-self: flex-end; font-size: 24px; color: var(--blanc); cursor: pointer; margin-bottom: 32px;
+  }
+  .mobile-menu-overlay a {
+    color: var(--blanc); font-size: 18px; font-weight: 600; text-decoration: none; margin-bottom: 24px;
+  }
 
   @media (max-width:980px){
     .frame-wrap{padding:24px 14px 60px;}
@@ -572,7 +644,7 @@
     <!-- HEADER -->
     <header class="site-header">
       <div class="logo">
-        <img src="logo-wapidogs.png" alt="Wapidogs Family" style="height:46px;width:auto;">
+        <img src="images/logo-wapidogs.png" alt="Wapidogs Family" style="height:92px;width:auto;">
       </div>
       <nav class="nav-links">
         <a>Élevage</a>
@@ -586,8 +658,7 @@
     </header>
 
     <!-- HERO -->
-    <section class="hero annot">
-      <span class="annot-tag" style="top:16px;left:16px;">A — Preuve sociale immédiate (Crufts / World Dog Show)</span>
+    <section class="hero">
       <div class="hero-grid">
         <div>
           <div class="eyebrow"><span class="dot"></span>Élevage · éducation · mushing — Le Chemin, 51800</div>
@@ -600,13 +671,12 @@
           <div class="hero-proof">
             <div class="proof-item"><strong>8 ans</strong>auprès des Huskies</div>
             <div class="proof-item"><strong>Crufts</strong>plus grand concours canin du monde</div>
-            <div class="proof-item"><strong>100h</strong>formation comportementaliste certifiée</div>
+            <div class="proof-item"><strong>Diplômé ACACED</strong>Éleveur et éducateur certifiés</div>
           </div>
         </div>
-        <div class="hero-visual annot">
-          <span class="annot-tag" style="top:-14px;right:30px;background:var(--ambre);color:var(--nuit);">B — Photo réelle Quentin + Wapi (à fournir)</span>
+        <div class="hero-visual">
           <div class="hero-photo-card">
-            <div class="ph">Photo : Quentin avec sa meute<br>(format portrait 4:5, ex. image Crufts)</div>
+            <img src="images/photo-hero-accueil.png" alt="Quentin avec sa meute" style="aspect-ratio: 4/5; border-radius: 12px; width: 100%; object-fit: cover; display: block;">
           </div>
           <div class="badge-float"><span>1er</span>Plus grand concours canin du monde (Crufts, Angleterre)</div>
         </div>
@@ -614,8 +684,7 @@
     </section>
 
     <!-- TRUST BAR -->
-    <div class="trust-bar annot">
-      <span class="annot-tag" style="top:-12px;left:32px;">C — Réassurance factuelle, pas générique</span>
+    <div class="trust-bar">
       <div class="trust-item"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0258bf" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg></span>Chiots LOF, parents testés</div>
       <div class="trust-item"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0258bf" stroke-width="1.8"><path d="M3 8l9-4 9 4-9 4-9-4z"/><path d="M7 11v4c0 1.5 2.2 3 5 3s5-1.5 5-3v-4"/></svg></span>Éducateur comportementaliste certifié</div>
       <div class="trust-item"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0258bf" stroke-width="1.8"><path d="M12 2C8 6 6 10 6 13a6 6 0 0012 0c0-3-2-7-6-11z"/></svg></span>Le Chemin (51) — sur rendez-vous</div>
@@ -657,9 +726,8 @@
     <!-- STORY -->
     <section class="section story">
       <div class="story-grid">
-        <div class="story-photo annot">
-          <span class="annot-tag" style="top:-12px;left:0;background:var(--ambre);color:var(--nuit);">D — Photo Quentin + meute (image fournie)</span>
-          Photo : Quentin et sa meute
+        <div class="story-photo">
+          <img src="images/story-meute.png" alt="Quentin et sa meute" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; border-radius: inherit; z-index: 0;">
           <div class="crufts-tag">🏆 Récompensé à Crufts, le plus grand concours canin du monde</div>
         </div>
         <div class="story-content">
@@ -676,6 +744,73 @@
       </div>
     </section>
 
+    <!-- EDUCATION -->
+    <section class="section education-section">
+      <div class="edu-intro">
+        <div class="eyebrow"><span class="dot"></span>ÉDUCATION ET COMPORTEMENT</div>
+        <h2>Comprendre votre chien, pour mieux vivre à ses côtés</h2>
+        <p>Un chien qui tire en laisse n'a pas besoin du même accompagnement qu'un chien qui a peur de tout. Diplômé ACACED et certifié éducateur canin comportementaliste, Quentin distingue les deux et adapte chaque suivi à votre situation réelle.</p>
+      </div>
+
+      <div class="edu-blocs-grid">
+        <div class="edu-bloc">
+          <h3>Éducation canine</h3>
+          <h4>Pour le quotidien</h4>
+          <p>Marche en laisse, rappel, sociabilisation, apprentissage des bases. L'éducation canine répond aux petits désagréments qui rendent la vie à deux plus difficile qu'elle ne devrait l'être.</p>
+        </div>
+        <div class="edu-bloc">
+          <h3>Comportementalisme</h3>
+          <h4>Pour les troubles plus profonds</h4>
+          <p>Agressivité, peurs, anxiété de séparation, réactivité. Le comportementalisme intervient là où l'éducation classique ne suffit plus, pour comprendre l'origine du trouble avant de le corriger.</p>
+        </div>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="num">01</div>
+          <h4>Bilan comportemental</h4>
+          <p>On observe, on écoute, on comprend. Cette première rencontre permet d'identifier précisément ce qui se joue chez votre chien, et ce qui est réellement possible de changer.</p>
+        </div>
+        <div class="process-step">
+          <div class="num">02</div>
+          <h4>Programme personnalisé</h4>
+          <p>Aucun chien ne ressemble à un autre. À partir du bilan, un accompagnement sur-mesure est construit, adapté à son âge, son histoire et votre rythme de vie.</p>
+        </div>
+        <div class="process-step">
+          <div class="num">03</div>
+          <h4>Suivi</h4>
+          <p>L'éducation se construit dans la durée. Les séances de suivi consolident les progrès et ajustent la méthode à mesure que la relation évolue.</p>
+        </div>
+      </div>
+
+      <div class="tarifs-container">
+        <div class="tarif-row highlight">
+          <span class="t-name">Bilan comportemental (1h30)</span>
+          <span class="t-price">70€</span>
+        </div>
+        <div class="tarif-row">
+          <span class="t-name">Séance de suivi individuelle (1h)</span>
+          <span class="t-price">55€</span>
+        </div>
+        <div class="tarif-row">
+          <span class="t-name">Forfait 3 séances, 1 bilan + 2 suivis</span>
+          <span class="t-price">170€</span>
+        </div>
+        <div class="tarif-row">
+          <span class="t-name">Forfait 5 séances, 1 bilan + 4 suivis</span>
+          <span class="t-price">260€</span>
+        </div>
+        <div class="tarif-row">
+          <span class="t-name">Promenade éducative (1h)</span>
+          <span class="t-price">45€</span>
+        </div>
+        <div class="tarifs-note">Tarifs indicatifs, sur rendez-vous au Chemin (51800) ou à domicile selon disponibilité.</div>
+        <div class="tarifs-cta">
+          <a class="btn-primary">Réserver mon bilan comportemental →</a>
+        </div>
+      </div>
+    </section>
+
     <!-- ACTIVITES -->
     <section class="section activites">
       <div class="section-head">
@@ -684,16 +819,15 @@
         <p>Traîneau l'hiver, kart et vélo le reste de l'année — une activité physique adaptée aux besoins naturels du Husky.</p>
       </div>
       <div class="activites-row">
-        <div class="act-card"><div class="img">Photo traîneau</div><div class="body"><span class="tag">Hiver</span><h4>Traîneau sur neige</h4><p>Sorties encadrées en forêt enneigée.</p></div></div>
-        <div class="act-card"><div class="img">Photo kart</div><div class="body"><span class="tag">Toute saison</span><h4>Cani-kart</h4><p>Sensations fortes tractées par la meute.</p></div></div>
-        <div class="act-card"><div class="img">Photo vélo</div><div class="body"><span class="tag">Toute saison</span><h4>Bikepulka / vélo</h4><p>Pour les familles et sportifs.</p></div></div>
-        <div class="act-card"><div class="img">Photo forêt</div><div class="body"><span class="tag">Toute saison</span><h4>Cani-randonnée</h4><p>Balade en forêt, rythme tranquille.</p></div></div>
+        <div class="act-card"><img src="images/traineau.png" class="img" style="width: 100%; object-fit: cover;" alt="Traîneau sur neige"><div class="body"><span class="tag">Hiver</span><h4>Traîneau sur neige</h4><p>Sorties encadrées en forêt enneigée.</p></div></div>
+        <div class="act-card"><img src="images/kart.png" class="img" style="width: 100%; object-fit: cover;" alt="Cani-kart"><div class="body"><span class="tag">Toute saison</span><h4>Cani-kart</h4><p>Sensations fortes tractées par la meute.</p></div></div>
+        <div class="act-card"><img src="images/velo.png" class="img" style="width: 100%; object-fit: cover;" alt="Bikepulka / vélo"><div class="body"><span class="tag">Toute saison</span><h4>Bikepulka / vélo</h4><p>Pour les familles et sportifs.</p></div></div>
+        <div class="act-card"><img src="images/cani-rando.png" class="img" style="width: 100%; object-fit: cover;" alt="Cani-randonnée"><div class="body"><span class="tag">Toute saison</span><h4>Cani-randonnée</h4><p>Balade en forêt, rythme tranquille.</p></div></div>
       </div>
     </section>
 
     <!-- CONTACT TUNNEL -->
-    <section class="section contact-section annot">
-      <span class="annot-tag" style="top:24px;right:32px;">E — Tunnel à choix multiple → 1 seul formulaire Supabase</span>
+    <section class="section contact-section">
       <div class="contact-grid">
         <div>
           <div class="eyebrow"><span class="dot"></span>Une question, un projet ?</div>
@@ -735,7 +869,7 @@
       <div class="footer-grid">
         <div>
           <div class="footer-logo">
-            <img src="logo-wapidogs.png" alt="Wapidogs Family" style="height:42px;width:auto;filter:brightness(1.3);">
+            <img src="images/logo-wapidogs.png" alt="Wapidogs Family" style="height:84px;width:auto;filter:brightness(1.3);">
           </div>
           <p style="max-width:240px;">Élevage, éducation canine et mushing au cœur de la Marne. 1 rue Basse, 51800 Le Chemin.</p>
           <div class="social-row" style="margin-top:16px;">
@@ -784,10 +918,20 @@
 
     <header class="site-header">
       <div class="logo" style="font-size:16px;">
-        <img src="logo-wapidogs.png" alt="Wapidogs Family" style="height:38px;width:auto;">
+        <img src="images/logo-wapidogs.png" alt="Wapidogs Family" style="height:76px;width:auto;">
       </div>
       <div class="mobile-nav-icon">☰</div>
     </header>
+
+    <div class="mobile-menu-overlay">
+      <div class="close-btn">✕</div>
+      <a>Élevage</a>
+      <a>Éducation canine</a>
+      <a>Mushing & forêt</a>
+      <a>Blog</a>
+      <a>Qui sommes-nous</a>
+      <a style="color:var(--ambre);">Nous contacter</a>
+    </div>
 
     <section class="hero">
       <div class="hero-grid">
@@ -802,13 +946,14 @@
         </div>
         <div class="hero-visual">
           <div class="hero-photo-card">
-            <div class="ph" style="font-size:12px;">Photo Quentin + Wapi</div>
+            <img src="images/photo-hero-accueil.png" alt="Quentin et Wapi" style="aspect-ratio: 4/5; border-radius: 12px; width: 100%; object-fit: cover; display: block;">
           </div>
-          <div class="badge-float" style="font-size:11px;"><span>1er</span>World Dog Show 2023</div>
+          <div class="badge-float" style="font-size:11px;"><span>1er</span>Plus grand concours canin du monde (Crufts, Angleterre)</div>
         </div>
         <div class="hero-proof" style="margin-top:18px;">
           <div class="proof-item"><strong>8 ans</strong>d'expérience</div>
-          <div class="proof-item"><strong>Crufts</strong>2024</div>
+          <div class="proof-item"><strong>Crufts</strong>plus grand concours canin du monde</div>
+          <div class="proof-item"><strong>Diplômé ACACED</strong>Éleveur et éducateur certifiés</div>
         </div>
       </div>
     </section>
@@ -849,7 +994,7 @@
     <section class="section story">
       <div class="story-grid">
         <div class="story-photo" style="aspect-ratio:16/10;">
-          Photo Quentin et sa meute
+          <img src="images/story-meute.png" alt="Quentin et sa meute" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; border-radius: inherit; z-index: 0;">
           <div class="crufts-tag">🏆 Crufts</div>
         </div>
         <div class="story-content">
@@ -861,6 +1006,86 @@
             <div class="s"><strong>2024</strong><span>Crufts</span></div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section education-section">
+      <div class="edu-intro">
+        <div class="eyebrow"><span class="dot"></span>ÉDUCATION ET COMPORTEMENT</div>
+        <h2 style="text-align:left;">Comprendre votre chien, pour mieux vivre à ses côtés</h2>
+        <p>Un chien qui tire en laisse n'a pas besoin du même accompagnement qu'un chien qui a peur de tout. Diplômé ACACED et certifié éducateur canin comportementaliste, Quentin distingue les deux et adapte chaque suivi à votre situation réelle.</p>
+      </div>
+
+      <div class="edu-blocs-grid">
+        <div class="edu-bloc">
+          <h3>Éducation canine</h3>
+          <h4>Pour le quotidien</h4>
+          <p>Marche en laisse, rappel, sociabilisation, apprentissage des bases. L'éducation canine répond aux petits désagréments qui rendent la vie à deux plus difficile qu'elle ne devrait l'être.</p>
+        </div>
+        <div class="edu-bloc">
+          <h3>Comportementalisme</h3>
+          <h4>Pour les troubles plus profonds</h4>
+          <p>Agressivité, peurs, anxiété de séparation, réactivité. Le comportementalisme intervient là où l'éducation classique ne suffit plus, pour comprendre l'origine du trouble avant de le corriger.</p>
+        </div>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="num">01</div>
+          <h4>Bilan comportemental</h4>
+          <p>On observe, on écoute, on comprend. Cette première rencontre permet d'identifier précisément ce qui se joue chez votre chien, et ce qui est réellement possible de changer.</p>
+        </div>
+        <div class="process-step">
+          <div class="num">02</div>
+          <h4>Programme personnalisé</h4>
+          <p>Aucun chien ne ressemble à un autre. À partir du bilan, un accompagnement sur-mesure est construit, adapté à son âge, son histoire et votre rythme de vie.</p>
+        </div>
+        <div class="process-step">
+          <div class="num">03</div>
+          <h4>Suivi</h4>
+          <p>L'éducation se construit dans la durée. Les séances de suivi consolident les progrès et ajustent la méthode à mesure que la relation évolue.</p>
+        </div>
+      </div>
+
+      <div class="tarifs-container">
+        <div class="tarif-row highlight">
+          <span class="t-name">Bilan comportemental (1h30)</span>
+          <span class="t-price">70€</span>
+        </div>
+        <div class="tarif-row">
+          <span class="t-name">Séance de suivi individuelle (1h)</span>
+          <span class="t-price">55€</span>
+        </div>
+        <div class="tarif-row">
+          <span class="t-name">Forfait 3 séances, 1 bilan + 2 suivis</span>
+          <span class="t-price">170€</span>
+        </div>
+        <div class="tarif-row">
+          <span class="t-name">Forfait 5 séances, 1 bilan + 4 suivis</span>
+          <span class="t-price">260€</span>
+        </div>
+        <div class="tarif-row">
+          <span class="t-name">Promenade éducative (1h)</span>
+          <span class="t-price">45€</span>
+        </div>
+        <div class="tarifs-note">Tarifs indicatifs, sur rendez-vous au Chemin (51800) ou à domicile selon disponibilité.</div>
+        <div class="tarifs-cta">
+          <a class="btn-primary" style="justify-content:center; text-align:center;">Réserver mon bilan comportemental →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section activites">
+      <div class="section-head">
+        <div class="eyebrow"><span class="dot"></span>Toute l'année, toutes saisons</div>
+        <h2 style="text-align:left;">Le mushing ne s'arrête jamais</h2>
+        <p>Traîneau l'hiver, kart et vélo le reste de l'année — une activité physique adaptée aux besoins naturels du Husky.</p>
+      </div>
+      <div class="activites-row">
+        <div class="act-card"><img src="images/traineau.png" class="img" style="width: 100%; object-fit: cover; object-position: center bottom;" alt="Traîneau sur neige"><div class="body"><span class="tag">Hiver</span><h4>Traîneau sur neige</h4><p>Sorties encadrées en forêt enneigée.</p></div></div>
+        <div class="act-card"><img src="images/kart.png" class="img" style="width: 100%; object-fit: cover;" alt="Cani-kart"><div class="body"><span class="tag">Toute saison</span><h4>Cani-kart</h4><p>Sensations fortes tractées par la meute.</p></div></div>
+        <div class="act-card"><img src="images/velo.png" class="img" style="width: 100%; object-fit: cover; object-position: center 20%;" alt="Bikepulka / vélo"><div class="body"><span class="tag">Toute saison</span><h4>Bikepulka / vélo</h4><p>Pour les familles et sportifs.</p></div></div>
+        <div class="act-card"><img src="images/cani-rando.png" class="img" style="width: 100%; object-fit: cover;" alt="Cani-randonnée"><div class="body"><span class="tag">Toute saison</span><h4>Cani-randonnée</h4><p>Balade en forêt, rythme tranquille.</p></div></div>
       </div>
     </section>
 
@@ -876,23 +1101,35 @@
         <h3>Réserver un chiot</h3>
         <div class="field"><label>Prénom et nom</label><input placeholder="Camille Dupont"></div>
         <div class="field"><label>Email</label><input placeholder="camille@email.fr"></div>
+        <div class="field"><label>Téléphone</label><input placeholder="06 12 34 56 78"></div>
         <div class="field"><label>Message</label><textarea rows="3" placeholder="Votre projet d'adoption..."></textarea></div>
         <button class="btn-submit">Envoyer ma demande</button>
+        <p class="rgpd-note">En soumettant ce formulaire, vous acceptez que vos données soient utilisées pour vous recontacter. Voir notre politique de confidentialité.</p>
       </div>
     </section>
 
     <footer class="site-footer">
       <div class="footer-grid">
         <div>
-          <div class="footer-logo" style="font-size:15px;"><img src="logo-wapidogs.png" alt="Wapidogs Family" style="height:36px;width:auto;filter:brightness(1.3);"></div>
+          <div class="footer-logo" style="font-size:15px;"><img src="images/logo-wapidogs.png" alt="Wapidogs Family" style="height:72px;width:auto;filter:brightness(1.3);"></div>
           <p>1 rue Basse, 51800 Le Chemin</p>
+          <div class="social-row" style="margin-top:16px;">
+            <a>f</a><a>ig</a><a>tt</a>
+          </div>
+          <h5 style="margin-top:24px;">À propos</h5>
+          <ul><li>Qui sommes-nous</li><li>Le palmarès de Wapi</li><li>Avis</li></ul>
         </div>
         <div>
           <h5>Activités</h5>
-          <ul><li>Élevage</li><li>Éducation</li><li>Mushing</li></ul>
+          <ul><li>Élevage</li><li>Éducation</li><li>Mushing</li><li>Blog</li></ul>
+          <h5 style="margin-top:24px;">Contact</h5>
+          <ul><li>contact@wapidogsfamily.fr</li><li>+33 7 45 04 93 48</li></ul>
         </div>
       </div>
-      <div class="footer-bottom"><span>© 2026 Wapidogs Family</span></div>
+      <div class="footer-bottom">
+        <span>© 2026 Wapidogs Family</span>
+        <span>Mentions légales · Politique de confidentialité (RGPD)</span>
+      </div>
     </footer>
 
   </div>
@@ -924,6 +1161,19 @@ document.querySelectorAll('.contact-option').forEach(opt => {
     opt.classList.add('is-selected');
   });
 });
+
+const mobileNavIcon = document.querySelector('.mobile-nav-icon');
+const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+const closeBtn = document.querySelector('.mobile-menu-overlay .close-btn');
+
+if (mobileNavIcon && mobileMenuOverlay && closeBtn) {
+  mobileNavIcon.addEventListener('click', () => {
+    mobileMenuOverlay.classList.add('open');
+  });
+  closeBtn.addEventListener('click', () => {
+    mobileMenuOverlay.classList.remove('open');
+  });
+}
 </script>
 
 </body>
