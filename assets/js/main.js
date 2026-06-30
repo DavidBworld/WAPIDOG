@@ -33,21 +33,22 @@ document.querySelectorAll('.contact-option').forEach(opt => {
   });
 });
 
-// --- GESTION DU MENU BURGER (INDEPENDANT PAR VUE) ---
-document.querySelectorAll('.mobile-nav-icon').forEach(icon => {
-  icon.addEventListener('click', () => {
-    const device = icon.closest('.device');
-    const overlay = device.querySelector('.mobile-menu-overlay');
-    if (overlay) overlay.classList.add('open');
-  });
-});
+// --- GESTION DU MENU BURGER ---
+const mobileNavIcon = document.querySelector('.mobile-nav-icon');
+const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+const closeBtn = document.querySelector('.mobile-menu-overlay .close-btn');
 
-document.querySelectorAll('.mobile-menu-overlay .close-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const overlay = btn.closest('.mobile-menu-overlay');
-    if (overlay) overlay.classList.remove('open');
+if (mobileNavIcon && mobileMenuOverlay) {
+  mobileNavIcon.addEventListener('click', () => {
+    mobileMenuOverlay.classList.add('open');
   });
-});
+}
+
+if (closeBtn && mobileMenuOverlay) {
+  closeBtn.addEventListener('click', () => {
+    mobileMenuOverlay.classList.remove('open');
+  });
+}
 
 // --- GESTION DU HEADER STICKY ---
 window.addEventListener('scroll', () => {
