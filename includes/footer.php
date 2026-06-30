@@ -34,8 +34,8 @@
         <h5>Infos pratiques</h5>
         <ul>
           <li>1 rue Basse, 51800 Le Chemin</li>
-          <li>+33 7 45 04 93 48</li>
-          <li>contact@wapidogs-family.fr</li>
+          <li><a href="tel:+33749279669">+33 7 49 27 96 69</a></li>
+          <li><a href="mailto:contact@wapidogs-family.fr">contact@wapidogs-family.fr</a></li>
           <li>Sur rendez-vous</li>
         </ul>
       </div>
