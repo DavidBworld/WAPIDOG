@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <script>document.documentElement.classList.add('js-enabled');</script>
 </head>
-<body>
+<body class="<?php echo isset($headerSolid) && $headerSolid ? 'header-solid' : ''; ?>">
 
 <header class="site-header">
   <div class="container">
