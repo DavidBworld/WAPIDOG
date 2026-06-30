@@ -30,7 +30,7 @@
   .device.tablet { display: none; }
   .device.mobile { display: none; }
   
-  @media (max-width: 980px) {
+  @media (max-width: 1024px) {
     .device { display: none; }
     .device.tablet { display: block; }
     .device.mobile { display: none; }
@@ -329,6 +329,7 @@
   }
   .pilier-bloc-content {
     padding: 40px;
+    text-align: center;
   }
   .pilier-bloc-content .num {
     font-family:'Fraunces',serif;
@@ -348,7 +349,7 @@
     line-height: 1.7;
     max-width: 480px;
     color: var(--gris);
-    margin-bottom: 24px;
+    margin: 0 auto 24px auto;
   }
   .pilier-bloc-content .link-more {
     font-size: 14px;
@@ -547,7 +548,11 @@
 
   /* ===== EDUCATION & COMPORTEMENT ===== */
   .education-section{background:var(--creme);}
-  .edu-intro{max-width:700px; margin-bottom:48px;}
+  .edu-intro{
+    max-width: 700px; 
+    margin: 0 auto 48px auto;
+    text-align: center;
+  }
   .edu-intro h2{font-size:32px;margin-bottom:16px;}
   .edu-intro p{color:var(--gris);font-size:16px;line-height:1.6;}
   
@@ -645,7 +650,7 @@
   
   .device.tablet .activites-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; overflow-x: visible; padding-bottom: 0; }
   .device.tablet .activites-row .act-card { min-width: 0; width: 100%; }
-  .device.tablet .act-card .img { height: 180px; }
+  .device.tablet .act-card .img { height: 320px; }
 
   .device.tablet .contact-grid { grid-template-columns: 1fr; gap: 40px; }
   

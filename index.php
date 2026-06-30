@@ -418,7 +418,7 @@
       <div class="container">
         <div class="section-head">
           <div class="eyebrow"><span class="dot"></span>Trois savoir-faire</div>
-          <h2 style="text-align:left;">Ce que nous proposons</h2>
+          <h2>Ce que nous proposons</h2>
         </div>
         
         <div class="pilier-bloc fade-in">
@@ -483,7 +483,7 @@
       <div class="container">
         <div class="edu-intro">
           <div class="eyebrow"><span class="dot"></span>ÉDUCATION ET COMPORTEMENT</div>
-          <h2 style="text-align:left;">Comprendre votre chien, pour mieux vivre à ses côtés</h2>
+          <h2>Comprendre votre chien, pour mieux vivre à ses côtés</h2>
           <p>Un chien qui tire en laisse n'a pas besoin du même accompagnement qu'un chien qui a peur de tout. Diplômé ACACED et certifié éducateur canin comportementaliste, Quentin distingue les deux et adapte chaque suivi à votre situation réelle.</p>
         </div>
 
@@ -551,13 +551,13 @@
       <div class="container">
         <div class="section-head">
           <div class="eyebrow"><span class="dot"></span>Toute l'année, toutes saisons</div>
-          <h2 style="text-align:left;">Le mushing ne s'arrête jamais</h2>
+          <h2>Le mushing ne s'arrête jamais</h2>
           <p>Traîneau l'hiver, kart et vélo le reste de l'année — une activité physique adaptée aux besoins naturels du Husky.</p>
         </div>
         <div class="activites-row">
           <div class="act-card"><img src="images/traineau.png" class="img" style="width: 100%; object-fit: cover; object-position: center bottom;" alt="Traîneau sur neige"><div class="body"><span class="tag">Hiver</span><h4>Traîneau sur neige</h4><p>Sorties encadrées en forêt enneigée.</p></div></div>
           <div class="act-card"><img src="images/kart.png" class="img" style="width: 100%; object-fit: cover;" alt="Cani-kart"><div class="body"><span class="tag">Toute saison</span><h4>Cani-kart</h4><p>Sensations fortes tractées par la meute.</p></div></div>
-          <div class="act-card"><img src="images/velo.png" class="img" style="width: 100%; object-fit: cover; object-position: center 20%;" alt="Bikepulka / vélo"><div class="body"><span class="tag">Toute saison</span><h4>Bikepulka / vélo</h4><p>Pour les familles et sportifs.</p></div></div>
+          <div class="act-card"><img src="images/velo.png" class="img" style="width: 100%; object-fit: cover; object-position: center 60%;" alt="Bikepulka / vélo"><div class="body"><span class="tag">Toute saison</span><h4>Bikepulka / vélo</h4><p>Pour les familles et sportifs.</p></div></div>
           <div class="act-card"><img src="images/cani-rando.png" class="img" style="width: 100%; object-fit: cover;" alt="Cani-randonnée"><div class="body"><span class="tag">Toute saison</span><h4>Cani-randonnée</h4><p>Balade en forêt, rythme tranquille.</p></div></div>
         </div>
       </div>
@@ -721,7 +721,7 @@
       <div class="container">
         <div class="section-head">
           <div class="eyebrow"><span class="dot"></span>Trois savoir-faire</div>
-          <h2 style="text-align:left;">Ce que nous proposons</h2>
+          <h2>Ce que nous proposons</h2>
         </div>
         
         <div class="pilier-bloc fade-in">
@@ -786,7 +786,7 @@
       <div class="container">
         <div class="edu-intro">
           <div class="eyebrow"><span class="dot"></span>ÉDUCATION ET COMPORTEMENT</div>
-          <h2 style="text-align:left;">Comprendre votre chien, pour mieux vivre à ses côtés</h2>
+          <h2>Comprendre votre chien, pour mieux vivre à ses côtés</h2>
           <p>Un chien qui tire en laisse n'a pas besoin du même accompagnement qu'un chien qui a peur de tout. Diplômé ACACED et certifié éducateur canin comportementaliste, Quentin distingue les deux et adapte chaque suivi à votre situation réelle.</p>
         </div>
 
@@ -854,7 +854,7 @@
       <div class="container">
         <div class="section-head">
           <div class="eyebrow"><span class="dot"></span>Toute l'année, toutes saisons</div>
-          <h2 style="text-align:left;">Le mushing ne s'arrête jamais</h2>
+          <h2>Le mushing ne s'arrête jamais</h2>
           <p>Traîneau l'hiver, kart et vélo le reste de l'année — une activité physique adaptée aux besoins naturels du Husky.</p>
         </div>
         <div class="activites-row">
