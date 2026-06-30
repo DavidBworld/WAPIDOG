@@ -1,0 +1,1706 @@
+﻿
+> maquette\index.html:9:<style>
+  maquette\index.html:10:  :root{
+  maquette\index.html:11:    --nuit:#08172b;
+  maquette\index.html:12:    --nuit-2:#0d2240;
+  maquette\index.html:13:    --bleu:#0258bf;
+  maquette\index.html:14:    --bleu-l:#4f8fe0;
+  maquette\index.html:15:    --ambre:#e78808;
+  maquette\index.html:16:    --ambre-l:#ffb347;
+  maquette\index.html:17:    --creme:#f7f3ea;
+  maquette\index.html:18:    --blanc:#ffffff;
+  maquette\index.html:19:    --gris:#5b6472;
+  maquette\index.html:20:    --gris-clair:#e7e3d8;
+  maquette\index.html:21:    --radius:14px;
+  maquette\index.html:22:  }
+  maquette\index.html:23:  *{margin:0;padding:0;box-sizing:border-box;}
+  maquette\index.html:24:  body{
+  maquette\index.html:25:    font-family:'Manrope',sans-serif;
+  maquette\index.html:26:    background:var(--creme);
+  maquette\index.html:27:    color:var(--nuit);
+  maquette\index.html:28:    line-height:1.6;
+  maquette\index.html:29:  }
+  maquette\index.html:30:  h1,h2,h3,.display{
+  maquette\index.html:31:    font-family:'Fraunces',serif;
+  maquette\index.html:32:    font-weight:600;
+  maquette\index.html:33:    letter-spacing:-0.01em;
+  maquette\index.html:34:  }
+  maquette\index.html:35:  img{max-width:100%;display:block;}
+  maquette\index.html:36:  a{color:inherit;text-decoration:none;}
+  maquette\index.html:37:
+  maquette\index.html:38:  /* ===== RESPONSIVE DEVICE DISPLAY ===== */
+  maquette\index.html:39:  .device.tablet { display: none; }
+  maquette\index.html:40:  .device.mobile { display: none; }
+  maquette\index.html:41:  
+  maquette\index.html:42:  @media (max-width: 980px) {
+  maquette\index.html:43:    .device { display: none; }
+  maquette\index.html:44:    .device.tablet { display: block; }
+  maquette\index.html:45:    .device.mobile { display: none; }
+  maquette\index.html:46:  }
+  maquette\index.html:47:  
+  maquette\index.html:48:  @media (max-width: 768px) {
+  maquette\index.html:49:    .device { display: none; }
+  maquette\index.html:50:    .device.tablet { display: none; }
+  maquette\index.html:51:    .device.mobile { display: block; }
+  maquette\index.html:52:  }
+  maquette\index.html:53:
+  maquette\index.html:54:  .frame-wrap{
+  maquette\index.html:55:    max-width:1180px;
+  maquette\index.html:56:    margin:0 auto;
+  maquette\index.html:57:    padding:32px 20px 80px;
+  maquette\index.html:58:  }
+  maquette\index.html:59:
+  maquette\index.html:60:  .device{
+  maquette\index.html:61:    background:var(--blanc);
+  maquette\index.html:62:    border-radius:var(--radius);
+  maquette\index.html:63:    overflow:hidden;
+  maquette\index.html:64:    box-shadow:0 2px 24px rgba(8,23,43,0.12);
+  maquette\index.html:65:  }
+  maquette\index.html:66:  .device.mobile{max-width:390px;margin:0 auto;}
+  maquette\index.html:67:
+  maquette\index.html:68:  /* ===== HEADER ===== */
+  maquette\index.html:69:  .site-header{
+  maquette\index.html:70:    background:var(--blanc);
+  maquette\index.html:71:    padding:18px 32px;
+  maquette\index.html:72:    display:flex;
+  maquette\index.html:73:    align-items:center;
+  maquette\index.html:74:    justify-content:space-between;
+  maquette\index.html:75:    border-bottom:1px solid var(--gris-clair);
+  maquette\index.html:76:  }
+  maquette\index.html:77:  .logo{
+  maquette\index.html:78:    display:flex;
+  maquette\index.html:79:    align-items:center;
+  maquette\index.html:80:    gap:10px;
+  maquette\index.html:81:    font-family:'Fraunces',serif;
+  maquette\index.html:82:    font-weight:600;
+  maquette\index.html:83:    font-size:19px;
+  maquette\index.html:84:  }
+  maquette\index.html:85:  .logo-mark{
+  maquette\index.html:86:    width:38px;height:38px;border-radius:50%;
+  maquette\index.html:87:    background:var(--nuit);
+  maquette\index.html:88:    display:flex;align-items:center;justify-content:center;
+  maquette\index.html:89:    flex-shrink:0;
+  maquette\index.html:90:  }
+  maquette\index.html:91:  .logo-mark svg{width:22px;height:22px;}
+  maquette\index.html:92:  .nav-links{display:flex;gap:30px;font-size:14px;font-weight:600;}
+  maquette\index.html:93:  .nav-links a{padding:6px 0;border-bottom:2px solid transparent;}
+  maquette\index.html:94:  .nav-links a:hover{border-bottom-color:var(--ambre);}
+  maquette\index.html:95:  .cta-header{
+  maquette\index.html:96:    background:var(--ambre);
+  maquette\index.html:97:    color:var(--nuit);
+  maquette\index.html:98:    padding:10px 22px;
+  maquette\index.html:99:    border-radius:30px;
+  maquette\index.html:100:    font-weight:700;
+  maquette\index.html:101:    font-size:13px;
+  maquette\index.html:102:  }
+  maquette\index.html:103:  .mobile-nav-icon{display:none;font-size:22px;}
+  maquette\index.html:104:
+  maquette\index.html:105:  /* ===== HERO ===== */
+  maquette\index.html:106:  .hero{
+  maquette\index.html:107:    background:linear-gradient(165deg, var(--nuit) 0%, var(--nuit-2) 100%);
+  maquette\index.html:108:    color:var(--creme);
+  maquette\index.html:109:    padding:72px 32px 60px;
+  maquette\index.html:110:    position:relative;
+  maquette\index.html:111:    overflow:hidden;
+  maquette\index.html:112:  }
+  maquette\index.html:113:  .hero::before{
+  maquette\index.html:114:    content:"";
+  maquette\index.html:115:    position:absolute;
+  maquette\index.html:116:    top:-40%;right:-10%;
+  maquette\index.html:117:    width:480px;height:480px;
+  maquette\index.html:118:    border-radius:50%;
+  maquette\index.html:119:    background:radial-gradient(circle, rgba(231,136,8,0.16) 0%, transparent 70%);
+  maquette\index.html:120:  }
+  maquette\index.html:121:  .hero-grid{
+  maquette\index.html:122:    display:grid;
+  maquette\index.html:123:    grid-template-columns:1.1fr 0.9fr;
+  maquette\index.html:124:    gap:48px;
+  maquette\index.html:125:    align-items:center;
+  maquette\index.html:126:    position:relative;
+  maquette\index.html:127:    z-index:2;
+  maquette\index.html:128:  }
+  maquette\index.html:129:  .eyebrow{
+  maquette\index.html:130:    display:inline-flex;
+  maquette\index.html:131:    align-items:center;
+  maquette\index.html:132:    gap:8px;
+  maquette\index.html:133:    font-size:12px;
+  maquette\index.html:134:    font-weight:700;
+  maquette\index.html:135:    letter-spacing:0.1em;
+  maquette\index.html:136:    text-transform:uppercase;
+  maquette\index.html:137:    color:var(--ambre-l);
+  maquette\index.html:138:    margin-bottom:24px;
+  maquette\index.html:139:  }
+  maquette\index.html:140:  .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--ambre);}
+  maquette\index.html:141:  .hero h1{
+  maquette\index.html:142:    font-size:42px;
+  maquette\index.html:143:    line-height:1.08;
+  maquette\index.html:144:    margin-bottom:24px;
+  maquette\index.html:145:  }
+  maquette\index.html:146:  .hero h1 em{font-style:italic;color:var(--ambre-l);font-weight:400;}
+  maquette\index.html:147:  .hero p.lead{
+  maquette\index.html:148:    font-size:16px;
+  maquette\index.html:149:    color:#c4cfe0;
+  maquette\index.html:150:    max-width:460px;
+  maquette\index.html:151:    margin-bottom:40px;
+  maquette\index.html:152:  }
+  maquette\index.html:153:  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:48px;}
+  maquette\index.html:154:  .btn-primary{
+  maquette\index.html:155:    background:var(--ambre);
+  maquette\index.html:156:    color:var(--nuit);
+  maquette\index.html:157:    padding:14px 26px;
+  maquette\index.html:158:    border-radius:30px;
+  maquette\index.html:159:    font-weight:700;
+  maquette\index.html:160:    font-size:14px;
+  maquette\index.html:161:    display:inline-flex;
+  maquette\index.html:162:    align-items:center;
+  maquette\index.html:163:    gap:8px;
+  maquette\index.html:164:  }
+  maquette\index.html:165:  .btn-secondary{
+  maquette\index.html:166:    border:1.5px solid rgba(255,255,255,0.35);
+  maquette\index.html:167:    color:var(--creme);
+  maquette\index.html:168:    padding:14px 26px;
+  maquette\index.html:169:    border-radius:30px;
+  maquette\index.html:170:    font-weight:700;
+  maquette\index.html:171:    font-size:14px;
+  maquette\index.html:172:  }
+  maquette\index.html:173:  .hero-proof{
+  maquette\index.html:174:    display:flex;
+  maquette\index.html:175:    gap:28px;
+  maquette\index.html:176:    padding-top:32px;
+  maquette\index.html:177:    border-top:1px solid rgba(255,255,255,0.15);
+  maquette\index.html:178:  }
+  maquette\index.html:179:  .proof-item{font-size:12px;color:#9aa7bd;}
+  maquette\index.html:180:  .proof-item strong{
+  maquette\index.html:181:    display:block;
+  maquette\index.html:182:    font-family:'Fraunces',serif;
+  maquette\index.html:183:    font-size:20px;
+  maquette\index.html:184:    color:var(--blanc);
+  maquette\index.html:185:    font-weight:600;
+  maquette\index.html:186:  }
+  maquette\index.html:187:  .hero-visual{
+  maquette\index.html:188:    position:relative;
+  maquette\index.html:189:  }
+  maquette\index.html:190:  .hero-photo-card{
+  maquette\index.html:191:    background:var(--blanc);
+  maquette\index.html:192:    border-radius:18px;
+  maquette\index.html:193:    padding:10px;
+  maquette\index.html:194:    box-shadow:0 24px 50px rgba(0,0,0,0.35);
+  maquette\index.html:195:    transform:rotate(2deg);
+  maquette\index.html:196:  }
+  maquette\index.html:197:  .hero-photo-card .ph{
+  maquette\index.html:198:    aspect-ratio:4/5;
+  maquette\index.html:199:    border-radius:12px;
+  maquette\index.html:200:    background:linear-gradient(135deg,#2a3f5c,#0d2240);
+  maquette\index.html:201:    display:flex;
+  maquette\index.html:202:    align-items:center;
+  maquette\index.html:203:    justify-content:center;
+  maquette\index.html:204:    color:#5d7497;
+  maquette\index.html:205:    font-size:13px;
+  maquette\index.html:206:    text-align:center;
+  maquette\index.html:207:    padding:20px;
+  maquette\index.html:208:  }
+  maquette\index.html:209:  .badge-float{
+  maquette\index.html:210:    position:absolute;
+  maquette\index.html:211:    bottom:-18px;
+  maquette\index.html:212:    left:-18px;
+  maquette\index.html:213:    background:var(--ambre);
+  maquette\index.html:214:    color:var(--nuit);
+  maquette\index.html:215:    padding:14px 18px;
+  maquette\index.html:216:    border-radius:12px;
+  maquette\index.html:217:    font-size:12px;
+  maquette\index.html:218:    font-weight:700;
+  maquette\index.html:219:    box-shadow:0 10px 24px rgba(231,136,8,0.4);
+  maquette\index.html:220:    max-width:200px;
+  maquette\index.html:221:    transform:rotate(-3deg);
+  maquette\index.html:222:  }
+  maquette\index.html:223:  .badge-float 
+span{display:block;font-family:'Fraunces',serif;font-size:18px;margin-bottom:2px;}
+  maquette\index.html:224:
+  maquette\index.html:225:  /* ===== TRUST BAR ===== */
+  maquette\index.html:226:  .trust-bar{
+  maquette\index.html:227:    background:var(--blanc);
+  maquette\index.html:228:    padding:20px 32px;
+  maquette\index.html:229:    display:flex;
+  maquette\index.html:230:    justify-content:space-around;
+  maquette\index.html:231:    flex-wrap:wrap;
+  maquette\index.html:232:    gap:16px;
+  maquette\index.html:233:    border-bottom:1px solid var(--gris-clair);
+  maquette\index.html:234:  }
+  maquette\index.html:235:  .trust-item{
+  maquette\index.html:236:    display:flex;
+  maquette\index.html:237:    align-items:center;
+  maquette\index.html:238:    gap:10px;
+  maquette\index.html:239:    font-size:13px;
+  maquette\index.html:240:    font-weight:600;
+  maquette\index.html:241:    color:var(--gris);
+  maquette\index.html:242:  }
+  maquette\index.html:243:  .trust-item .ic{
+  maquette\index.html:244:    width:30px;height:30px;
+  maquette\index.html:245:    border-radius:50%;
+  maquette\index.html:246:    background:#eef1f6;
+  maquette\index.html:247:    display:flex;align-items:center;justify-content:center;
+  maquette\index.html:248:    color:var(--bleu);
+  maquette\index.html:249:    flex-shrink:0;
+  maquette\index.html:250:  }
+  maquette\index.html:251:
+  maquette\index.html:252:  /* ===== PILIERS ===== */
+  maquette\index.html:253:  .section{padding:72px 32px;}
+  maquette\index.html:254:  .section-head{
+  maquette\index.html:255:    text-align:center;
+  maquette\index.html:256:    max-width:560px;
+  maquette\index.html:257:    margin:0 auto 48px;
+  maquette\index.html:258:  }
+  maquette\index.html:259:  .section-head .eyebrow{color:var(--bleu);justify-content:center;}
+  maquette\index.html:260:  .section-head h2{font-size:32px;margin-bottom:12px;}
+  maquette\index.html:261:  .section-head p{color:var(--gris);font-size:15px;}
+  maquette\index.html:262:
+  maquette\index.html:263:  .piliers-grid{
+  maquette\index.html:264:    display:grid;
+  maquette\index.html:265:    grid-template-columns:repeat(3,1fr);
+  maquette\index.html:266:    gap:24px;
+  maquette\index.html:267:  }
+  maquette\index.html:268:  .pilier-card{
+  maquette\index.html:269:    background:var(--blanc);
+  maquette\index.html:270:    border-radius:var(--radius);
+  maquette\index.html:271:    padding:32px 26px;
+  maquette\index.html:272:    border:1px solid var(--gris-clair);
+  maquette\index.html:273:    transition:transform 0.2s;
+  maquette\index.html:274:  }
+  maquette\index.html:275:  .pilier-card .num{
+  maquette\index.html:276:    font-family:'Fraunces',serif;
+  maquette\index.html:277:    font-size:13px;
+  maquette\index.html:278:    color:var(--ambre);
+  maquette\index.html:279:    font-weight:600;
+  maquette\index.html:280:    margin-bottom:16px;
+  maquette\index.html:281:    letter-spacing:0.05em;
+  maquette\index.html:282:  }
+  maquette\index.html:283:  .pilier-card .ic-wrap{
+  maquette\index.html:284:    width:52px;height:52px;
+  maquette\index.html:285:    border-radius:14px;
+  maquette\index.html:286:    background:var(--nuit);
+  maquette\index.html:287:    display:flex;align-items:center;justify-content:center;
+  maquette\index.html:288:    margin-bottom:20px;
+  maquette\index.html:289:    color:var(--ambre-l);
+  maquette\index.html:290:  }
+  maquette\index.html:291:  .pilier-card h3{font-size:19px;margin-bottom:10px;}
+  maquette\index.html:292:  .pilier-card p{font-size:14px;color:var(--gris);margin-bottom:18px;}
+  maquette\index.html:293:  .pilier-card .link-more{
+  maquette\index.html:294:    font-size:13px;font-weight:700;color:var(--bleu);
+  maquette\index.html:295:    display:inline-flex;align-items:center;gap:6px;
+  maquette\index.html:296:  }
+  maquette\index.html:297:
+  maquette\index.html:298:  /* ===== STORY / QUI SOMMES NOUS ===== */
+  maquette\index.html:299:  .story{background:var(--blanc);}
+  maquette\index.html:300:  .story-grid{
+  maquette\index.html:301:    display:grid;
+  maquette\index.html:302:    grid-template-columns:0.85fr 1.15fr;
+  maquette\index.html:303:    gap:56px;
+  maquette\index.html:304:    align-items:center;
+  maquette\index.html:305:  }
+  maquette\index.html:306:  .story-photo{
+  maquette\index.html:307:    aspect-ratio:1/1.05;
+  maquette\index.html:308:    border-radius:18px;
+  maquette\index.html:309:    background:linear-gradient(150deg,#1a3158,#08172b);
+  maquette\index.html:310:    display:flex;align-items:center;justify-content:center;
+  maquette\index.html:311:    color:#5d7497;
+  maquette\index.html:312:    font-size:13px;
+  maquette\index.html:313:    position:relative;
+  maquette\index.html:314:  }
+  maquette\index.html:315:  .story-photo .crufts-tag{
+  maquette\index.html:316:    position:absolute;
+  maquette\index.html:317:    top:18px;right:18px;
+  maquette\index.html:318:    background:var(--blanc);
+  maquette\index.html:319:    color:var(--nuit);
+  maquette\index.html:320:    font-size:11px;
+  maquette\index.html:321:    font-weight:700;
+  maquette\index.html:322:    padding:8px 12px;
+  maquette\index.html:323:    border-radius:8px;
+  maquette\index.html:324:    box-shadow:0 6px 16px rgba(0,0,0,0.2);
+  maquette\index.html:325:  }
+  maquette\index.html:326:  .story-content .eyebrow{color:var(--ambre);}
+  maquette\index.html:327:  .story-content h2{font-size:30px;margin-bottom:18px;}
+  maquette\index.html:328:  .story-content p{color:var(--gris);font-size:15px;margin-bottom:16px;}
+  maquette\index.html:329:  .story-stats{
+  maquette\index.html:330:    display:grid;
+  maquette\index.html:331:    grid-template-columns:repeat(3,1fr);
+  maquette\index.html:332:    gap:18px;
+  maquette\index.html:333:    margin-top:28px;
+  maquette\index.html:334:    padding-top:24px;
+  maquette\index.html:335:    border-top:1px solid var(--gris-clair);
+  maquette\index.html:336:  }
+  maquette\index.html:337:  .story-stats .s strong{
+  maquette\index.html:338:    display:block;font-family:'Fraunces',serif;font-size:24px;color:var(--bleu);
+  maquette\index.html:339:  }
+  maquette\index.html:340:  .story-stats .s span{font-size:12px;color:var(--gris);}
+  maquette\index.html:341:
+  maquette\index.html:342:  /* ===== ACTIVITES MUSHING ===== */
+  maquette\index.html:343:  .activites{background:var(--creme);}
+  maquette\index.html:344:  .activites-row{
+  maquette\index.html:345:    display:flex;
+  maquette\index.html:346:    gap:18px;
+  maquette\index.html:347:    overflow-x:auto;
+  maquette\index.html:348:    padding-bottom:8px;
+  maquette\index.html:349:  }
+  maquette\index.html:350:  .act-card{
+  maquette\index.html:351:    min-width:230px;
+  maquette\index.html:352:    background:var(--blanc);
+  maquette\index.html:353:    border-radius:var(--radius);
+  maquette\index.html:354:    overflow:hidden;
+  maquette\index.html:355:    border:1px solid var(--gris-clair);
+  maquette\index.html:356:    flex-shrink:0;
+  maquette\index.html:357:  }
+  maquette\index.html:358:  .act-card .img{
+  maquette\index.html:359:    height:140px;
+  maquette\index.html:360:    background:linear-gradient(135deg,#2a3f5c,#0d2240);
+  maquette\index.html:361:    display:flex;align-items:center;justify-content:center;
+  maquette\index.html:362:    color:#5d7497;font-size:12px;
+  maquette\index.html:363:  }
+  maquette\index.html:364:  .act-card .body{padding:18px;}
+  maquette\index.html:365:  .act-card .tag{
+  maquette\index.html:366:    font-size:11px;font-weight:700;color:var(--ambre);
+  maquette\index.html:367:    text-transform:uppercase;letter-spacing:0.05em;
+  maquette\index.html:368:    margin-bottom:6px;display:block;
+  maquette\index.html:369:  }
+  maquette\index.html:370:  .act-card h4{font-size:16px;margin-bottom:6px;}
+  maquette\index.html:371:  .act-card p{font-size:13px;color:var(--gris);}
+  maquette\index.html:372:
+  maquette\index.html:373:  /* ===== TUNNEL CONTACT ===== */
+  maquette\index.html:374:  .contact-section{
+  maquette\index.html:375:    background:var(--nuit);
+  maquette\index.html:376:    color:var(--creme);
+  maquette\index.html:377:  }
+  maquette\index.html:378:  .contact-grid{
+  maquette\index.html:379:    display:grid;
+  maquette\index.html:380:    grid-template-columns:1fr 1fr;
+  maquette\index.html:381:    gap:48px;
+  maquette\index.html:382:  }
+  maquette\index.html:383:  .contact-section .eyebrow{color:var(--ambre-l);}
+  maquette\index.html:384:  .contact-section h2{font-size:30px;color:var(--blanc);margin-bottom:16px;}
+  maquette\index.html:385:  .contact-section .lead{color:#aab6c8;font-size:15px;margin-bottom:28px;}
+  maquette\index.html:386:  .contact-options{display:flex;flex-direction:column;gap:12px;}
+  maquette\index.html:387:  .contact-option{
+  maquette\index.html:388:    background:rgba(255,255,255,0.05);
+  maquette\index.html:389:    border:1px solid rgba(255,255,255,0.12);
+  maquette\index.html:390:    border-radius:12px;
+  maquette\index.html:391:    padding:16px 18px;
+  maquette\index.html:392:    display:flex;
+  maquette\index.html:393:    align-items:center;
+  maquette\index.html:394:    gap:14px;
+  maquette\index.html:395:    cursor:pointer;
+  maquette\index.html:396:  }
+  maquette\index.html:397:  .contact-option.is-selected{border-color:var(--ambre);background:rgba(231,136,8,0.1);}
+  maquette\index.html:398:  .contact-option .ic{
+  maquette\index.html:399:    width:38px;height:38px;border-radius:10px;
+  maquette\index.html:400:    background:rgba(231,136,8,0.15);
+  maquette\index.html:401:    color:var(--ambre-l);
+  maquette\index.html:402:    display:flex;align-items:center;justify-content:center;
+  maquette\index.html:403:    flex-shrink:0;
+  maquette\index.html:404:  }
+  maquette\index.html:405:  .contact-option strong{display:block;font-size:14px;margin-bottom:2px;}
+  maquette\index.html:406:  .contact-option span{font-size:12px;color:#9aa7bd;}
+  maquette\index.html:407:
+  maquette\index.html:408:  .form-card{
+  maquette\index.html:409:    background:var(--blanc);
+  maquette\index.html:410:    border-radius:18px;
+  maquette\index.html:411:    padding:32px;
+  maquette\index.html:412:    color:var(--nuit);
+  maquette\index.html:413:  }
+  maquette\index.html:414:  .form-card h3{font-size:18px;margin-bottom:18px;}
+  maquette\index.html:415:  .field{margin-bottom:16px;}
+  maquette\index.html:416:  .field 
+label{font-size:12px;font-weight:700;color:var(--gris);display:block;margin-bottom:6px;}
+  maquette\index.html:417:  .field input,.field select,.field textarea{
+  maquette\index.html:418:    width:100%;
+  maquette\index.html:419:    border:1px solid var(--gris-clair);
+  maquette\index.html:420:    border-radius:8px;
+  maquette\index.html:421:    padding:11px 12px;
+  maquette\index.html:422:    font-family:'Manrope',sans-serif;
+  maquette\index.html:423:    font-size:14px;
+  maquette\index.html:424:    background:var(--creme);
+  maquette\index.html:425:  }
+  maquette\index.html:426:  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  maquette\index.html:427:  .btn-submit{
+  maquette\index.html:428:    width:100%;
+  maquette\index.html:429:    background:var(--ambre);
+  maquette\index.html:430:    color:var(--nuit);
+  maquette\index.html:431:    border:none;
+  maquette\index.html:432:    padding:14px;
+  maquette\index.html:433:    border-radius:8px;
+  maquette\index.html:434:    font-weight:700;
+  maquette\index.html:435:    font-size:14px;
+  maquette\index.html:436:    font-family:'Manrope',sans-serif;
+  maquette\index.html:437:    margin-top:6px;
+  maquette\index.html:438:  }
+  maquette\index.html:439:  .rgpd-note{font-size:11px;color:var(--gris);margin-top:10px;line-height:1.5;}
+  maquette\index.html:440:
+  maquette\index.html:441:  /* ===== FOOTER ===== */
+  maquette\index.html:442:  .site-footer{
+  maquette\index.html:443:    background:#061322;
+  maquette\index.html:444:    color:#7e8da3;
+  maquette\index.html:445:    padding:48px 32px 24px;
+  maquette\index.html:446:    font-size:13px;
+  maquette\index.html:447:  }
+  maquette\index.html:448:  .footer-grid{
+  maquette\index.html:449:    display:grid;
+  maquette\index.html:450:    grid-template-columns:1.4fr 1fr 1fr 1fr;
+  maquette\index.html:451:    gap:32px;
+  maquette\index.html:452:    margin-bottom:32px;
+  maquette\index.html:453:  }
+  maquette\index.html:454:  .site-footer h5{
+  maquette\index.html:455:    color:var(--creme);
+  maquette\index.html:456:    font-size:13px;
+  maquette\index.html:457:    font-weight:700;
+  maquette\index.html:458:    margin-bottom:14px;
+  maquette\index.html:459:    text-transform:uppercase;
+  maquette\index.html:460:    letter-spacing:0.05em;
+  maquette\index.html:461:  }
+  maquette\index.html:462:  .footer-grid ul{list-style:none;}
+  maquette\index.html:463:  .footer-grid li{margin-bottom:9px;}
+  maquette\index.html:464:  .footer-logo{display:flex;align-items:center;gap:10px;margin-bottom:14px;font-family:'Fraun
+ces',serif;color:var(--creme);font-size:17px;font-weight:600;}
+  maquette\index.html:465:  .footer-bottom{
+  maquette\index.html:466:    border-top:1px solid rgba(255,255,255,0.08);
+  maquette\index.html:467:    padding-top:20px;
+  maquette\index.html:468:    display:flex;
+  maquette\index.html:469:    justify-content:space-between;
+  maquette\index.html:470:    font-size:12px;
+  maquette\index.html:471:    flex-wrap:wrap;
+  maquette\index.html:472:    gap:10px;
+  maquette\index.html:473:  }
+  maquette\index.html:474:  .social-row{display:flex;gap:10px;}
+  maquette\index.html:475:  .social-row a{
+  maquette\index.html:476:    width:32px;height:32px;border-radius:50%;
+  maquette\index.html:477:    background:rgba(255,255,255,0.06);
+  maquette\index.html:478:    display:flex;align-items:center;justify-content:center;
+  maquette\index.html:479:  }
+  maquette\index.html:480:
+  maquette\index.html:481:
+  maquette\index.html:482:
+  maquette\index.html:483:  /* ===== EDUCATION & COMPORTEMENT ===== */
+  maquette\index.html:484:  .education-section{background:var(--creme);}
+  maquette\index.html:485:  .edu-intro{max-width:700px; margin-bottom:48px;}
+  maquette\index.html:486:  .edu-intro h2{font-size:32px;margin-bottom:16px;}
+  maquette\index.html:487:  .edu-intro p{color:var(--gris);font-size:16px;line-height:1.6;}
+  maquette\index.html:488:  
+  maquette\index.html:489:  .edu-blocs-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:64px;}
+  maquette\index.html:490:  .edu-bloc{
+  maquette\index.html:491:    background:var(--blanc);
+  maquette\index.html:492:    border-radius:18px;
+  maquette\index.html:493:    padding:32px;
+  maquette\index.html:494:    border:1px solid var(--gris-clair);
+  maquette\index.html:495:  }
+  maquette\index.html:496:  .edu-bloc h3{font-size:20px;margin-bottom:4px;color:var(--nuit);}
+  maquette\index.html:497:  .edu-bloc h4{font-size:13px;color:var(--ambre);text-transform:uppercase;margin-bottom:16px;
+letter-spacing:0.05em;font-weight:700;}
+  maquette\index.html:498:  .edu-bloc p{font-size:14px;color:var(--gris);line-height:1.6;}
+  maquette\index.html:499:  
+  maquette\index.html:500:  .process-steps{
+  maquette\index.html:501:    display:grid; grid-template-columns:1fr 1fr 1fr; gap:24px; margin-bottom:64px;
+  maquette\index.html:502:  }
+  maquette\index.html:503:  .process-step{
+  maquette\index.html:504:    background:var(--blanc);
+  maquette\index.html:505:    padding:32px 24px;
+  maquette\index.html:506:    border-radius:16px;
+  maquette\index.html:507:    border:1px solid var(--gris-clair);
+  maquette\index.html:508:  }
+  maquette\index.html:509:  .process-step .num{
+  maquette\index.html:510:    font-size:32px; font-weight:800; font-family:'Fraunces',serif;
+  maquette\index.html:511:    color:var(--ambre); margin-bottom:16px;
+  maquette\index.html:512:    line-height:1;
+  maquette\index.html:513:  }
+  maquette\index.html:514:  .process-step h4{font-size:16px; margin-bottom:8px;}
+  maquette\index.html:515:  .process-step p{font-size:13px; color:var(--gris);line-height:1.5;}
+  maquette\index.html:516:  
+  maquette\index.html:517:  .tarifs-container{
+  maquette\index.html:518:    max-width:680px; margin:0 auto;
+  maquette\index.html:519:    background:var(--blanc); padding:40px; border-radius:24px;
+  maquette\index.html:520:    box-shadow:0 10px 30px rgba(0,0,0,0.03);
+  maquette\index.html:521:    border:1px solid var(--gris-clair);
+  maquette\index.html:522:  }
+  maquette\index.html:523:  .tarif-row{
+  maquette\index.html:524:    display:flex; justify-content:space-between; align-items:flex-end;
+  maquette\index.html:525:    margin-bottom:16px; font-size:15px; position:relative;
+  maquette\index.html:526:  }
+  maquette\index.html:527:  .tarif-row::after{
+  maquette\index.html:528:    content:''; position:absolute; bottom:6px; left:0; right:0;
+  maquette\index.html:529:    border-bottom:1px dashed var(--gris-clair); z-index:1;
+  maquette\index.html:530:  }
+  maquette\index.html:531:  .tarif-row span{background:var(--blanc); position:relative; z-index:2;}
+  maquette\index.html:532:  .tarif-row .t-name{padding-right:8px; font-weight:500; color:var(--nuit);}
+  maquette\index.html:533:  .tarif-row .t-price{padding-left:8px; font-weight:700; color:var(--nuit);}
+  maquette\index.html:534:  
+  maquette\index.html:535:  .tarif-row.highlight{
+  maquette\index.html:536:    background:rgba(231,136,8,0.1); 
+  maquette\index.html:537:    padding:16px; 
+  maquette\index.html:538:    border-radius:12px;
+  maquette\index.html:539:    border:1px solid var(--ambre);
+  maquette\index.html:540:    margin-bottom:24px;
+  maquette\index.html:541:    align-items:center;
+  maquette\index.html:542:  }
+  maquette\index.html:543:  .tarif-row.highlight::after{display:none;}
+  maquette\index.html:544:  .tarif-row.highlight span{background:transparent;}
+  maquette\index.html:545:  
+  maquette\index.html:546:  .tarifs-note{font-size:12px; color:#9aa7bd; margin-top:32px; text-align:center;}
+  maquette\index.html:547:  .tarifs-cta{text-align:center; margin-top:32px;}
+  maquette\index.html:548:
+  maquette\index.html:549:  /* ===== TABLET SIM STYLES ===== */
+  maquette\index.html:550:  .device.tablet { max-width: 768px; margin: 0 auto; }
+  maquette\index.html:551:  .device.tablet .site-header { padding: 18px 24px; }
+  maquette\index.html:552:  .device.tablet .nav-links { display: none; }
+  maquette\index.html:553:  .device.tablet .cta-header { display: none; }
+  maquette\index.html:554:  .device.tablet .mobile-nav-icon { display: block; }
+  maquette\index.html:555:
+  maquette\index.html:556:  .device.tablet .hero { padding: 60px 24px 40px; flex-direction: row; align-items: center; }
+  maquette\index.html:557:  .device.tablet .hero-content { max-width: 50%; }
+  maquette\index.html:558:  .device.tablet .hero h1 { font-size: 42px; }
+  maquette\index.html:559:  .device.tablet .hero-photo { width: 45%; }
+  maquette\index.html:560:  
+  maquette\index.html:561:  .device.tablet .trust-bar { padding: 24px; display: grid; grid-template-columns: 1fr 1fr; 
+gap: 20px; overflow: hidden; }
+  maquette\index.html:562:  .device.tablet .trust-bar .t-item { white-space: normal; }
+  maquette\index.html:563:  
+  maquette\index.html:564:  .device.tablet .piliers-grid { grid-template-columns: 1fr 1fr; }
+  maquette\index.html:565:  
+  maquette\index.html:566:  .device.tablet .story-grid { grid-template-columns: 1fr; gap: 24px; }
+  maquette\index.html:567:  .device.tablet .story-photo img { height: 300px; position: static; }
+  maquette\index.html:568:  .device.tablet .story-photo { height: auto; min-height: 0; }
+  maquette\index.html:569:  .device.tablet .crufts-tag { top: auto; bottom: -12px; left: 20px; }
+  maquette\index.html:570:  
+  maquette\index.html:571:  .device.tablet .edu-blocs-grid { grid-template-columns: 1fr 1fr; }
+  maquette\index.html:572:  .device.tablet .process-steps { grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+  maquette\index.html:573:  
+  maquette\index.html:574:  .device.tablet .activites-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; 
+overflow-x: visible; padding-bottom: 0; }
+  maquette\index.html:575:  .device.tablet .activites-row .act-card { min-width: 0; width: 100%; }
+  maquette\index.html:576:  .device.tablet .act-card .img { height: 180px; }
+  maquette\index.html:577:
+  maquette\index.html:578:  .device.tablet .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  maquette\index.html:579:  
+  maquette\index.html:580:  .device.tablet .footer-grid { grid-template-columns: 1fr 1fr; }
+  maquette\index.html:581:
+  maquette\index.html:582:  /* ===== MOBILE SIM STYLES ===== */
+  maquette\index.html:583:  .device.mobile .site-header{padding:14px 18px;}
+  maquette\index.html:584:  .device.mobile .nav-links{display:none;}
+  maquette\index.html:585:  .device.mobile .mobile-nav-icon{display:block;}
+  maquette\index.html:586:  .device.mobile .cta-header{display:none;}
+  maquette\index.html:587:  .device.mobile .hero{padding:40px 20px 36px;}
+  maquette\index.html:588:  .device.mobile .hero-grid{grid-template-columns:1fr;gap:32px;}
+  maquette\index.html:589:  .device.mobile .hero h1{font-size:30px;}
+  maquette\index.html:590:  .device.mobile .hero-photo-card{max-width:260px;margin:0 auto;transform:rotate(0);}
+  maquette\index.html:591:  .device.mobile .badge-float{left:50%;transform:translateX(-50%);bottom:-14px;}
+  maquette\index.html:592:  .device.mobile .hero-proof{flex-wrap:wrap;gap:18px;}
+  maquette\index.html:593:  .device.mobile .trust-bar{padding:16px 18px;justify-content:flex-start;overflow-x:auto;}
+  maquette\index.html:594:  .device.mobile .section{padding:48px 20px;}
+  maquette\index.html:595:  .device.mobile .section-head h2{font-size:24px;}
+  maquette\index.html:596:  .device.mobile .piliers-grid{grid-template-columns:1fr;gap:18px;}
+  maquette\index.html:597:  .device.mobile .story-grid{grid-template-columns:1fr;gap:28px;}
+  maquette\index.html:598:  .device.mobile .story-content h2{font-size:24px;}
+  maquette\index.html:599:  .device.mobile .story-stats{grid-template-columns:repeat(3,1fr);gap:10px;}
+  maquette\index.html:600:  .device.mobile .contact-grid{grid-template-columns:1fr;gap:32px;}
+  maquette\index.html:601:  .device.mobile .field-row{grid-template-columns:1fr;}
+  maquette\index.html:602:  .device.mobile .footer-grid{grid-template-columns:1fr 1fr;gap:24px;}
+  maquette\index.html:603:  .device.mobile .footer-bottom{flex-direction:column;}
+  maquette\index.html:604:  .device.mobile .activites-row{flex-direction:column; overflow-x:visible;}
+  maquette\index.html:605:  .device.mobile .activites-row .act-card{width:100%; min-width:0;}
+  maquette\index.html:606:  .device.mobile .act-card .img{height:220px;}
+  maquette\index.html:607:  .device.mobile .edu-intro h2{font-size:26px;}
+  maquette\index.html:608:  .device.mobile .edu-blocs-grid{grid-template-columns:1fr; gap:16px; margin-bottom:48px;}
+  maquette\index.html:609:  .device.mobile .process-steps{grid-template-columns:1fr; gap:16px; margin-bottom:48px;}
+  maquette\index.html:610:  .device.mobile .tarifs-container{padding:24px;}
+  maquette\index.html:611:  .device.mobile .tarif-row{font-size:13px; margin-bottom:12px;}
+  maquette\index.html:612:  .device.mobile .tarif-row.highlight{padding:12px;}
+  maquette\index.html:613:
+  maquette\index.html:614:  /* Burger Menu CSS */
+  maquette\index.html:615:  .mobile-menu-overlay {
+  maquette\index.html:616:    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  maquette\index.html:617:    background: var(--nuit);
+  maquette\index.html:618:    z-index: 9999;
+  maquette\index.html:619:    display: flex; flex-direction: column; padding: 24px;
+  maquette\index.html:620:    opacity: 0; pointer-events: none;
+  maquette\index.html:621:    transition: opacity 0.3s ease;
+  maquette\index.html:622:  }
+  maquette\index.html:623:  .mobile-menu-overlay.open {
+  maquette\index.html:624:    opacity: 1; pointer-events: auto;
+  maquette\index.html:625:  }
+  maquette\index.html:626:  .mobile-menu-overlay .close-btn {
+  maquette\index.html:627:    align-self: flex-end; font-size: 24px; color: var(--blanc); cursor: pointer; 
+margin-bottom: 32px;
+  maquette\index.html:628:  }
+  maquette\index.html:629:  .mobile-menu-overlay a {
+  maquette\index.html:630:    color: var(--blanc); font-size: 18px; font-weight: 600; text-decoration: none; 
+margin-bottom: 24px;
+  maquette\index.html:631:  }
+  maquette\index.html:632:
+  maquette\index.html:633:  @media (max-width:980px){
+  maquette\index.html:634:    .frame-wrap{padding:24px 14px 60px;}
+  maquette\index.html:635:  }
+  maquette\index.html:636:</style>
+  maquette\index.html:637:</head>
+  maquette\index.html:638:<body>
+  maquette\index.html:639:
+  maquette\index.html:640:<div class="frame-wrap">
+  maquette\index.html:641:  <div class="device">
+  maquette\index.html:642:
+  maquette\index.html:643:    <!-- HEADER -->
+  maquette\index.html:644:    <header class="site-header">
+  maquette\index.html:645:      <div class="logo">
+  maquette\index.html:646:        <img src="images/logo-wapidogs.png" alt="Wapidogs Family" 
+style="height:92px;width:auto;">
+  maquette\index.html:647:      </div>
+  maquette\index.html:648:      <nav class="nav-links">
+  maquette\index.html:649:        <a>Élevage</a>
+  maquette\index.html:650:        <a>Éducation canine</a>
+  maquette\index.html:651:        <a>Mushing & forêt</a>
+  maquette\index.html:652:        <a>Blog</a>
+  maquette\index.html:653:        <a>Qui sommes-nous</a>
+  maquette\index.html:654:      </nav>
+  maquette\index.html:655:      <a class="cta-header">Nous contacter</a>
+  maquette\index.html:656:      <div class="mobile-nav-icon">☰</div>
+  maquette\index.html:657:    </header>
+  maquette\index.html:658:
+  maquette\index.html:659:    <!-- HERO -->
+  maquette\index.html:660:    <section class="hero">
+  maquette\index.html:661:      <div class="hero-grid">
+  maquette\index.html:662:        <div>
+  maquette\index.html:663:          <div class="eyebrow"><span class="dot"></span>Élevage · éducation · mushing — Le 
+Chemin, 51800</div>
+  maquette\index.html:664:          <h1>L'esprit du Grand Nord, <em>cultivé avec exigence</em></h1>
+  maquette\index.html:665:          <p class="lead">Chiots Husky sibérien LOF, éducation comportementale certifiée et 
+sorties mushing en forêt, par un éleveur récompensé au Crufts et au World Dog Show.</p>
+  maquette\index.html:666:          <div class="hero-ctas">
+  maquette\index.html:667:            <a class="btn-primary">Voir les chiots disponibles →</a>
+  maquette\index.html:668:            <a class="btn-secondary">Découvrir nos sorties</a>
+  maquette\index.html:669:          </div>
+  maquette\index.html:670:          <div class="hero-proof">
+  maquette\index.html:671:            <div class="proof-item"><strong>8 ans</strong>auprès des Huskies</div>
+  maquette\index.html:672:            <div class="proof-item"><strong>Crufts</strong>plus grand concours canin du 
+monde</div>
+  maquette\index.html:673:            <div class="proof-item"><strong>Diplômé ACACED</strong>Éleveur et éducateur 
+certifiés</div>
+  maquette\index.html:674:          </div>
+  maquette\index.html:675:        </div>
+  maquette\index.html:676:        <div class="hero-visual">
+  maquette\index.html:677:          <div class="hero-photo-card">
+  maquette\index.html:678:            <img src="images/photo-hero-accueil.png" alt="Quentin avec sa meute" 
+style="aspect-ratio: 4/5; border-radius: 12px; width: 100%; object-fit: cover; display: block;">
+  maquette\index.html:679:          </div>
+  maquette\index.html:680:          <div class="badge-float"><span>1er</span>Plus grand concours canin du monde 
+(Crufts, Angleterre)</div>
+  maquette\index.html:681:        </div>
+  maquette\index.html:682:      </div>
+  maquette\index.html:683:    </section>
+  maquette\index.html:684:
+  maquette\index.html:685:    <!-- TRUST BAR -->
+  maquette\index.html:686:    <div class="trust-bar">
+  maquette\index.html:687:      <div class="trust-item"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 
+24" fill="none" stroke="#0258bf" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg></span>Chiots LOF, parents 
+testés</div>
+  maquette\index.html:688:      <div class="trust-item"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 
+24" fill="none" stroke="#0258bf" stroke-width="1.8"><path d="M3 8l9-4 9 4-9 4-9-4z"/><path d="M7 11v4c0 1.5 2.2 3 5 
+3s5-1.5 5-3v-4"/></svg></span>Éducateur comportementaliste certifié</div>
+  maquette\index.html:689:      <div class="trust-item"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 
+24" fill="none" stroke="#0258bf" stroke-width="1.8"><path d="M12 2C8 6 6 10 6 13a6 6 0 0012 
+0c0-3-2-7-6-11z"/></svg></span>Le Chemin (51) — sur rendez-vous</div>
+  maquette\index.html:690:      <div class="trust-item"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 
+24" fill="none" stroke="#0258bf" stroke-width="1.8"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 01-10 0V4z"/><path d="M7 
+6H4a3 3 0 003 5M17 6h3a3 3 0 01-3 5"/></svg></span>Palmarès international (Crufts, WDS)</div>
+  maquette\index.html:691:    </div>
+  maquette\index.html:692:
+  maquette\index.html:693:    <!-- PILIERS -->
+  maquette\index.html:694:    <section class="section">
+  maquette\index.html:695:      <div class="section-head">
+  maquette\index.html:696:        <div class="eyebrow"><span class="dot"></span>Trois savoir-faire, une même 
+passion</div>
+  maquette\index.html:697:        <h2>Ce que Wapidogs Family vous propose</h2>
+  maquette\index.html:698:        <p>Chaque silo a son propre parcours de page, son propre formulaire — pour que 
+chaque visiteur trouve une réponse précise à sa demande.</p>
+  maquette\index.html:699:      </div>
+  maquette\index.html:700:      <div class="piliers-grid">
+  maquette\index.html:701:        <div class="pilier-card">
+  maquette\index.html:702:          <div class="num">01</div>
+  maquette\index.html:703:          <div class="ic-wrap"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" 
+stroke="#e78808" stroke-width="1.5"><path d="M12 2C8 6 6 10 6 13a6 6 0 0012 0c0-3-2-7-6-11z"/><path d="M9 13a3 3 0 006 
+0"/></svg></div>
+  maquette\index.html:704:          <h3>Élevage de Husky sibérien</h3>
+  maquette\index.html:705:          <p>Lignées sport et beauté, parents testés et primés (Crufts, World Dog Show). 
+Chiots sociabilisés, suivi à vie.</p>
+  maquette\index.html:706:          <a class="link-more">Voir les portées disponibles →</a>
+  maquette\index.html:707:        </div>
+  maquette\index.html:708:        <div class="pilier-card">
+  maquette\index.html:709:          <div class="num">02</div>
+  maquette\index.html:710:          <div class="ic-wrap"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" 
+stroke="#e78808" stroke-width="1.5"><path d="M3 8l9-4 9 4-9 4-9-4z"/><path d="M7 11v4c0 1.5 2.2 3 5 3s5-1.5 
+5-3v-4"/></svg></div>
+  maquette\index.html:711:          <h3>Éducation et comportement</h3>
+  maquette\index.html:712:          <p>Bilan comportemental, rééducation, conseils personnalisés — par un éducateur 
+certifié (formation 100h).</p>
+  maquette\index.html:713:          <a class="link-more">Réserver un bilan →</a>
+  maquette\index.html:714:        </div>
+  maquette\index.html:715:        <div class="pilier-card">
+  maquette\index.html:716:          <div class="num">03</div>
+  maquette\index.html:717:          <div class="ic-wrap"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" 
+stroke="#e78808" stroke-width="1.5"><path d="M2 19l3-3 14-1-3 4H2z"/><path d="M9 16l2-9 9 2-4 7"/><circle cx="11" 
+cy="6" r="1.4" fill="#e78808" stroke="none"/></svg></div>
+  maquette\index.html:718:          <h3>Mushing & sorties en forêt</h3>
+  maquette\index.html:719:          <p>Cani-rando, kart, vélo, traîneau selon la saison. Initiation et sorties 
+encadrées en pleine nature.</p>
+  maquette\index.html:720:          <a class="link-more">Suivre nos activités →</a>
+  maquette\index.html:721:        </div>
+  maquette\index.html:722:      </div>
+  maquette\index.html:723:    </section>
+  maquette\index.html:724:
+  maquette\index.html:725:    <!-- STORY -->
+  maquette\index.html:726:    <section class="section story">
+  maquette\index.html:727:      <div class="story-grid">
+  maquette\index.html:728:        <div class="story-photo">
+  maquette\index.html:729:          <img src="images/story-meute.png" alt="Quentin et sa meute" style="position: 
+absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; border-radius: 
+inherit; z-index: 0;">
+  maquette\index.html:730:          <div class="crufts-tag">🏆 Récompensé à Crufts, le plus grand concours canin du 
+monde</div>
+  maquette\index.html:731:        </div>
+  maquette\index.html:732:        <div class="story-content">
+  maquette\index.html:733:          <div class="eyebrow"><span class="dot"></span>L'histoire de Wapi</div>
+  maquette\index.html:734:          <h2>Tout a commencé avec un Husky nommé Wapi</h2>
+  maquette\index.html:735:          <p>Passionné de chiens depuis l'enfance, Quentin De Schryver élève des Huskies 
+sibériens depuis 8 ans. Son mâle Wapi est devenu le premier Husky de France à terminer Meilleur Mâle Husky au Crufts, 
+après une 1ère place en classe au World Dog Show.</p>
+  maquette\index.html:736:          <p>Aujourd'hui installé au Chemin, dans la Marne, pour offrir plus d'espace à sa 
+meute, Quentin partage son quotidien entre l'élevage, l'éducation comportementale certifiée et le mushing — qu'il 
+pratique aussi en compétition.</p>
+  maquette\index.html:737:          <div class="story-stats">
+  maquette\index.html:738:            <div class="s"><strong>8 ans</strong><span>avec les Huskies</span></div>
+  maquette\index.html:739:            <div class="s"><strong>5+</strong><span>chiens adultes</span></div>
+  maquette\index.html:740:            <div class="s"><strong>2024</strong><span>Crufts, meilleur mâle</span></div>
+  maquette\index.html:741:          </div>
+  maquette\index.html:742:        </div>
+  maquette\index.html:743:      </div>
+  maquette\index.html:744:    </section>
+  maquette\index.html:745:
+  maquette\index.html:746:    <!-- EDUCATION -->
+  maquette\index.html:747:    <section class="section education-section">
+  maquette\index.html:748:      <div class="edu-intro">
+  maquette\index.html:749:        <div class="eyebrow"><span class="dot"></span>ÉDUCATION ET COMPORTEMENT</div>
+  maquette\index.html:750:        <h2>Comprendre votre chien, pour mieux vivre à ses côtés</h2>
+  maquette\index.html:751:        <p>Un chien qui tire en laisse n'a pas besoin du même accompagnement qu'un chien qui 
+a peur de tout. Diplômé ACACED et certifié éducateur canin comportementaliste, Quentin distingue les deux et adapte 
+chaque suivi à votre situation réelle.</p>
+  maquette\index.html:752:      </div>
+  maquette\index.html:753:
+  maquette\index.html:754:      <div class="edu-blocs-grid">
+  maquette\index.html:755:        <div class="edu-bloc">
+  maquette\index.html:756:          <h3>Éducation canine</h3>
+  maquette\index.html:757:          <h4>Pour le quotidien</h4>
+  maquette\index.html:758:          <p>Marche en laisse, rappel, sociabilisation, apprentissage des bases. L'éducation 
+canine répond aux petits désagréments qui rendent la vie à deux plus difficile qu'elle ne devrait l'être.</p>
+  maquette\index.html:759:        </div>
+  maquette\index.html:760:        <div class="edu-bloc">
+  maquette\index.html:761:          <h3>Comportementalisme</h3>
+  maquette\index.html:762:          <h4>Pour les troubles plus profonds</h4>
+  maquette\index.html:763:          <p>Agressivité, peurs, anxiété de séparation, réactivité. Le comportementalisme 
+intervient là où l'éducation classique ne suffit plus, pour comprendre l'origine du trouble avant de le corriger.</p>
+  maquette\index.html:764:        </div>
+  maquette\index.html:765:      </div>
+  maquette\index.html:766:
+  maquette\index.html:767:      <div class="process-steps">
+  maquette\index.html:768:        <div class="process-step">
+  maquette\index.html:769:          <div class="num">01</div>
+  maquette\index.html:770:          <h4>Bilan comportemental</h4>
+  maquette\index.html:771:          <p>On observe, on écoute, on comprend. Cette première rencontre permet 
+d'identifier précisément ce qui se joue chez votre chien, et ce qui est réellement possible de changer.</p>
+  maquette\index.html:772:        </div>
+  maquette\index.html:773:        <div class="process-step">
+  maquette\index.html:774:          <div class="num">02</div>
+  maquette\index.html:775:          <h4>Programme personnalisé</h4>
+  maquette\index.html:776:          <p>Aucun chien ne ressemble à un autre. À partir du bilan, un accompagnement 
+sur-mesure est construit, adapté à son âge, son histoire et votre rythme de vie.</p>
+  maquette\index.html:777:        </div>
+  maquette\index.html:778:        <div class="process-step">
+  maquette\index.html:779:          <div class="num">03</div>
+  maquette\index.html:780:          <h4>Suivi</h4>
+  maquette\index.html:781:          <p>L'éducation se construit dans la durée. Les séances de suivi consolident les 
+progrès et ajustent la méthode à mesure que la relation évolue.</p>
+  maquette\index.html:782:        </div>
+  maquette\index.html:783:      </div>
+  maquette\index.html:784:
+  maquette\index.html:785:      <div class="tarifs-container">
+  maquette\index.html:786:        <div class="tarif-row highlight">
+  maquette\index.html:787:          <span class="t-name">Bilan comportemental (1h à 1h30)</span>
+  maquette\index.html:788:          <span class="t-price">50€</span>
+  maquette\index.html:789:        </div>
+  maquette\index.html:790:        <div class="tarif-row">
+  maquette\index.html:791:          <span class="t-name">Forfait 5 séances de suivi (1h)</span>
+  maquette\index.html:792:          <span class="t-price">325€</span>
+  maquette\index.html:793:        </div>
+  maquette\index.html:794:        <div class="tarif-row">
+  maquette\index.html:795:          <span class="t-name">Forfait 10 séances de suivi (1h)</span>
+  maquette\index.html:796:          <span class="t-price">550€</span>
+  maquette\index.html:797:        </div>
+  maquette\index.html:798:        <div class="tarif-row">
+  maquette\index.html:799:          <span class="t-name">Séance de suivi à l'unité (hors forfait)</span>
+  maquette\index.html:800:          <span class="t-price">60€</span>
+  maquette\index.html:801:        </div>
+  maquette\index.html:802:        <div class="tarif-row">
+  maquette\index.html:803:          <span class="t-name">Séance de suivi à partir de la 11ème</span>
+  maquette\index.html:804:          <span class="t-price">50€</span>
+  maquette\index.html:805:        </div>
+  maquette\index.html:806:        <div class="tarifs-note">Tarifs indicatifs, sur rendez-vous au Chemin (51800) ou à 
+domicile selon disponibilité.</div>
+  maquette\index.html:807:        <div class="tarifs-cta">
+  maquette\index.html:808:          <a class="btn-primary">Réserver mon bilan comportemental →</a>
+  maquette\index.html:809:        </div>
+  maquette\index.html:810:      </div>
+  maquette\index.html:811:    </section>
+  maquette\index.html:812:
+  maquette\index.html:813:    <!-- ACTIVITES -->
+  maquette\index.html:814:    <section class="section activites">
+  maquette\index.html:815:      <div class="section-head">
+  maquette\index.html:816:        <div class="eyebrow"><span class="dot"></span>Toute l'année, toutes saisons</div>
+  maquette\index.html:817:        <h2>Le mushing ne s'arrête jamais</h2>
+  maquette\index.html:818:        <p>Traîneau l'hiver, kart et vélo le reste de l'année — une activité physique 
+adaptée aux besoins naturels du Husky.</p>
+  maquette\index.html:819:      </div>
+  maquette\index.html:820:      <div class="activites-row">
+  maquette\index.html:821:        <div class="act-card"><img src="images/traineau.png" class="img" style="width: 100%; 
+object-fit: cover;" alt="Traîneau sur neige"><div class="body"><span class="tag">Hiver</span><h4>Traîneau sur 
+neige</h4><p>Sorties encadrées en forêt enneigée.</p></div></div>
+  maquette\index.html:822:        <div class="act-card"><img src="images/kart.png" class="img" style="width: 100%; 
+object-fit: cover;" alt="Cani-kart"><div class="body"><span class="tag">Toute 
+saison</span><h4>Cani-kart</h4><p>Sensations fortes tractées par la meute.</p></div></div>
+  maquette\index.html:823:        <div class="act-card"><img src="images/velo.png" class="img" style="width: 100%; 
+object-fit: cover;" alt="Bikepulka / vélo"><div class="body"><span class="tag">Toute saison</span><h4>Bikepulka / 
+vélo</h4><p>Pour les familles et sportifs.</p></div></div>
+  maquette\index.html:824:        <div class="act-card"><img src="images/cani-rando.png" class="img" style="width: 
+100%; object-fit: cover;" alt="Cani-randonnée"><div class="body"><span class="tag">Toute 
+saison</span><h4>Cani-randonnée</h4><p>Balade en forêt, rythme tranquille.</p></div></div>
+  maquette\index.html:825:      </div>
+  maquette\index.html:826:    </section>
+  maquette\index.html:827:
+  maquette\index.html:828:    <!-- CONTACT TUNNEL -->
+  maquette\index.html:829:    <section class="section contact-section">
+  maquette\index.html:830:      <div class="contact-grid">
+  maquette\index.html:831:        <div>
+  maquette\index.html:832:          <div class="eyebrow"><span class="dot"></span>Une question, un projet ?</div>
+  maquette\index.html:833:          <h2>Dites-nous ce qui vous amène</h2>
+  maquette\index.html:834:          <p class="lead">Sélectionnez votre demande pour que le bon formulaire s'affiche — 
+réponse sous 48h.</p>
+  maquette\index.html:835:          <div class="contact-options">
+  maquette\index.html:836:            <div class="contact-option is-selected" data-type="chiot">
+  maquette\index.html:837:              <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" 
+stroke="#e78808" stroke-width="1.6"><path d="M12 2C8 6 6 10 6 13a6 6 0 0012 0c0-3-2-7-6-11z"/></svg></div>
+  maquette\index.html:838:              <div><strong>Adopter un chiot</strong><span>Voir les portées et 
+réserver</span></div>
+  maquette\index.html:839:            </div>
+  maquette\index.html:840:            <div class="contact-option" data-type="bilan">
+  maquette\index.html:841:              <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" 
+stroke="#e78808" stroke-width="1.6"><path d="M3 8l9-4 9 4-9 4-9-4z"/><path d="M7 11v4c0 1.5 2.2 3 5 3s5-1.5 
+5-3v-4"/></svg></div>
+  maquette\index.html:842:              <div><strong>Bilan comportemental</strong><span>Éducation, rééducation, 
+conseils</span></div>
+  maquette\index.html:843:            </div>
+  maquette\index.html:844:            <div class="contact-option" data-type="mushing">
+  maquette\index.html:845:              <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" 
+stroke="#e78808" stroke-width="1.6"><path d="M2 19l3-3 14-1-3 4H2z"/><path d="M9 16l2-9 9 2-4 7"/></svg></div>
+  maquette\index.html:846:              <div><strong>Sortie mushing</strong><span>Cani-rando, kart, 
+traîneau</span></div>
+  maquette\index.html:847:            </div>
+  maquette\index.html:848:          </div>
+  maquette\index.html:849:        </div>
+  maquette\index.html:850:        <div class="form-card">
+  maquette\index.html:851:          <div id="form-chiot" class="form-content active">
+  maquette\index.html:852:            <h3>Réserver un chiot</h3>
+  maquette\index.html:853:            <div class="field-row">
+  maquette\index.html:854:              <div class="field"><label>Prénom</label><input placeholder="Camille"></div>
+  maquette\index.html:855:              <div class="field"><label>Nom</label><input placeholder="Dupont"></div>
+  maquette\index.html:856:            </div>
+  maquette\index.html:857:            <div class="field"><label>Email</label><input 
+placeholder="camille@email.fr"></div>
+  maquette\index.html:858:            <div class="field"><label>Téléphone</label><input placeholder="06 12 34 56 
+78"></div>
+  maquette\index.html:859:            <div class="field"><label>Avez-vous déjà eu un Husky 
+?</label><select><option>Oui</option><option>Non, première fois</option></select></div>
+  maquette\index.html:860:            <div class="field"><label>Votre message</label><textarea rows="3" 
+placeholder="Parlez-nous de votre projet d'adoption..."></textarea></div>
+  maquette\index.html:861:            <button class="btn-submit">Envoyer ma demande</button>
+  maquette\index.html:862:            <p class="rgpd-note">En soumettant ce formulaire, vous acceptez que vos données 
+soient utilisées pour vous recontacter. Voir notre politique de confidentialité.</p>
+  maquette\index.html:863:          </div>
+  maquette\index.html:864:
+  maquette\index.html:865:          <div id="form-bilan" class="form-content" style="display:none;">
+  maquette\index.html:866:            <h3>Réserver mon bilan comportemental</h3>
+  maquette\index.html:867:            <div class="field-row">
+  maquette\index.html:868:              <div class="field"><label>Prénom</label><input placeholder="Camille"></div>
+  maquette\index.html:869:              <div class="field"><label>Nom</label><input placeholder="Dupont"></div>
+  maquette\index.html:870:            </div>
+  maquette\index.html:871:            <div class="field"><label>Email</label><input 
+placeholder="camille@email.fr"></div>
+  maquette\index.html:872:            <div class="field"><label>Téléphone</label><input placeholder="06 12 34 56 
+78"></div>
+  maquette\index.html:873:            <div class="field"><label>Quel est le problème rencontré ?</label>
+  maquette\index.html:874:              <select>
+  maquette\index.html:875:                <option>Marche en laisse, rappel, obéissance</option>
+  maquette\index.html:876:                <option>Agressivité</option>
+  maquette\index.html:877:                <option>Peurs, anxiété</option>
+  maquette\index.html:878:                <option>Sociabilisation</option>
+  maquette\index.html:879:                <option>Autre</option>
+  maquette\index.html:880:              </select>
+  maquette\index.html:881:            </div>
+  maquette\index.html:882:            <div class="field"><label>Votre message</label><textarea rows="3" 
+placeholder="Parlez-nous du comportement de votre chien..."></textarea></div>
+  maquette\index.html:883:            <button class="btn-submit">Envoyer ma demande</button>
+  maquette\index.html:884:            <p class="rgpd-note">En soumettant ce formulaire, vous acceptez que vos données 
+soient utilisées pour vous recontacter. Voir notre politique de confidentialité.</p>
+  maquette\index.html:885:          </div>
+  maquette\index.html:886:
+  maquette\index.html:887:          <div id="form-mushing" class="form-content" style="display:none;">
+  maquette\index.html:888:            <h3>Bientôt disponible</h3>
+  maquette\index.html:889:            <p 
+style="font-size:15px;line-height:1.6;color:var(--nuit-l);margin-bottom:24px;">Cette activité est encore en cours de 
+structuration. Suivez nos sorties sur les réseaux sociaux ou contactez-nous directement pour plus d'informations.</p>
+  maquette\index.html:890:            <a href="#" class="btn-primary" style="display:inline-flex;">Découvrir la page 
+mushing</a>
+  maquette\index.html:891:          </div>
+  maquette\index.html:892:        </div>
+  maquette\index.html:893:      </div>
+  maquette\index.html:894:    </section>
+  maquette\index.html:895:
+  maquette\index.html:896:    <!-- FOOTER -->
+  maquette\index.html:897:    <footer class="site-footer">
+  maquette\index.html:898:      <div class="footer-grid">
+  maquette\index.html:899:        <div>
+  maquette\index.html:900:          <div class="footer-logo">
+  maquette\index.html:901:            <img src="images/logo-wapidogs.png" alt="Wapidogs Family" 
+style="height:84px;width:auto;filter:brightness(1.3);">
+  maquette\index.html:902:          </div>
+  maquette\index.html:903:          <p style="max-width:240px;">Élevage, éducation canine et mushing au cœur de la 
+Marne. 1 rue Basse, 51800 Le Chemin.</p>
+  maquette\index.html:904:          <div class="social-row" style="margin-top:16px;">
+  maquette\index.html:905:            <a>f</a><a>ig</a><a>tt</a>
+  maquette\index.html:906:          </div>
+  maquette\index.html:907:        </div>
+  maquette\index.html:908:        <div>
+  maquette\index.html:909:          <h5>Nos activités</h5>
+  maquette\index.html:910:          <ul>
+  maquette\index.html:911:            <li>Élevage Husky</li>
+  maquette\index.html:912:            <li>Éducation canine</li>
+  maquette\index.html:913:            <li>Mushing & forêt</li>
+  maquette\index.html:914:            <li>Blog</li>
+  maquette\index.html:915:          </ul>
+  maquette\index.html:916:        </div>
+  maquette\index.html:917:        <div>
+  maquette\index.html:918:          <h5>Wapidogs Family</h5>
+  maquette\index.html:919:          <ul>
+  maquette\index.html:920:            <li>Qui sommes-nous</li>
+  maquette\index.html:921:            <li>Le palmarès de Wapi</li>
+  maquette\index.html:922:            <li>Avis</li>
+  maquette\index.html:923:            <li>Contact</li>
+  maquette\index.html:924:          </ul>
+  maquette\index.html:925:        </div>
+  maquette\index.html:926:        <div>
+  maquette\index.html:927:          <h5>Infos pratiques</h5>
+  maquette\index.html:928:          <ul>
+  maquette\index.html:929:            <li>1 rue Basse, 51800 Le Chemin</li>
+  maquette\index.html:930:            <li>+33 7 45 04 93 48</li>
+  maquette\index.html:931:            <li>contact@wapidogsfamily.fr</li>
+  maquette\index.html:932:            <li>Sur rendez-vous</li>
+  maquette\index.html:933:          </ul>
+  maquette\index.html:934:        </div>
+  maquette\index.html:935:      </div>
+  maquette\index.html:936:      <div class="footer-bottom">
+  maquette\index.html:937:        <span>© 2026 Wapidogs Family — tous droits réservés</span>
+  maquette\index.html:938:        <span>Mentions légales · Politique de confidentialité (RGPD)</span>
+  maquette\index.html:939:      </div>
+  maquette\index.html:940:    </footer>
+  maquette\index.html:941:
+  maquette\index.html:942:  </div>
+  maquette\index.html:943:
+  maquette\index.html:944:  <!-- ===================== MOBILE FRAME ===================== -->
+  maquette\index.html:945:
+  maquette\index.html:946:  <div class="device tablet">
+  maquette\index.html:947:
+  maquette\index.html:948:    <header class="site-header">
+  maquette\index.html:949:      <div class="logo" style="font-size:16px;">
+  maquette\index.html:950:        <img src="images/logo-wapidogs.png" alt="Wapidogs Family" 
+style="height:76px;width:auto;">
+  maquette\index.html:951:      </div>
+  maquette\index.html:952:      <div class="mobile-nav-icon">☰</div>
+  maquette\index.html:953:    </header>
+  maquette\index.html:954:
+  maquette\index.html:955:    <div class="mobile-menu-overlay">
+  maquette\index.html:956:      <div class="close-btn">✕</div>
+  maquette\index.html:957:      <a>Élevage</a>
+  maquette\index.html:958:      <a>Éducation canine</a>
+  maquette\index.html:959:      <a>Mushing & forêt</a>
+  maquette\index.html:960:      <a>Blog</a>
+  maquette\index.html:961:      <a>Qui sommes-nous</a>
+  maquette\index.html:962:      <a style="color:var(--ambre);">Nous contacter</a>
+  maquette\index.html:963:    </div>
+  maquette\index.html:964:
+  maquette\index.html:965:    <section class="hero">
+  maquette\index.html:966:      <div class="hero-grid">
+  maquette\index.html:967:        <div>
+  maquette\index.html:968:          <div class="eyebrow" style="font-size:11px;"><span class="dot"></span>Le Chemin, 
+51800</div>
+  maquette\index.html:969:          <h1>L'esprit du Grand Nord, <em>cultivé avec exigence</em></h1>
+  maquette\index.html:970:          <p class="lead" style="font-size:14px;">Chiots Husky LOF, éducation 
+comportementale certifiée et sorties mushing en forêt.</p>
+  maquette\index.html:971:          <div class="hero-ctas" style="flex-direction:column;">
+  maquette\index.html:972:            <a class="btn-primary" style="justify-content:center;">Voir les chiots 
+disponibles →</a>
+  maquette\index.html:973:            <a class="btn-secondary" style="text-align:center;">Découvrir nos sorties</a>
+  maquette\index.html:974:          </div>
+  maquette\index.html:975:        </div>
+  maquette\index.html:976:        <div class="hero-visual">
+  maquette\index.html:977:          <div class="hero-photo-card">
+  maquette\index.html:978:            <img src="images/photo-hero-accueil.png" alt="Quentin et Wapi" 
+style="aspect-ratio: 4/5; border-radius: 12px; width: 100%; object-fit: cover; display: block;">
+  maquette\index.html:979:          </div>
+  maquette\index.html:980:          <div class="badge-float" style="font-size:11px;"><span>1er</span>Plus grand 
+concours canin du monde (Crufts, Angleterre)</div>
+  maquette\index.html:981:        </div>
+  maquette\index.html:982:        <div class="hero-proof" style="margin-top:18px;">
+  maquette\index.html:983:          <div class="proof-item"><strong>8 ans</strong>d'expérience</div>
+  maquette\index.html:984:          <div class="proof-item"><strong>Crufts</strong>plus grand concours canin du 
+monde</div>
+  maquette\index.html:985:          <div class="proof-item"><strong>Diplômé ACACED</strong>Éleveur et éducateur 
+certifiés</div>
+  maquette\index.html:986:        </div>
+  maquette\index.html:987:      </div>
+  maquette\index.html:988:    </section>
+  maquette\index.html:989:
+  maquette\index.html:990:    <div class="trust-bar">
+  maquette\index.html:991:      <div class="trust-item"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 
+24" fill="none" stroke="#0258bf" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg></span>Chiots LOF</div>
+  maquette\index.html:992:      <div class="trust-item"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 
+24" fill="none" stroke="#0258bf" stroke-width="1.8"><path d="M3 8l9-4 9 4-9 4-9-4z"/><path d="M7 11v4c0 1.5 2.2 3 5 
+3s5-1.5 5-3v-4"/></svg></span>Certifié</div>
+  maquette\index.html:993:      <div class="trust-item"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 
+24" fill="none" stroke="#0258bf" stroke-width="1.8"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 01-10 0V4z"/><path d="M7 
+6H4a3 3 0 003 5M17 6h3a3 3 0 01-3 5"/></svg></span>Palmarès</div>
+  maquette\index.html:994:    </div>
+  maquette\index.html:995:
+  maquette\index.html:996:    <section class="section">
+  maquette\index.html:997:      <div class="section-head">
+  maquette\index.html:998:        <div class="eyebrow" style="justify-content:flex-start;font-size:11px;"><span 
+class="dot"></span>Trois savoir-faire</div>
+  maquette\index.html:999:        <h2 style="text-align:left;">Ce que nous proposons</h2>
+  maquette\index.html:1000:      </div>
+  maquette\index.html:1001:      <div class="piliers-grid">
+  maquette\index.html:1002:        <div class="pilier-card">
+  maquette\index.html:1003:          <div class="ic-wrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" 
+stroke="#e78808" stroke-width="1.5"><path d="M12 2C8 6 6 10 6 13a6 6 0 0012 0c0-3-2-7-6-11z"/><path d="M9 13a3 3 0 006 
+0"/></svg></div>
+  maquette\index.html:1004:          <h3>Élevage Husky sibérien</h3>
+  maquette\index.html:1005:          <p>Lignées primées, chiots sociabilisés, suivi à vie.</p>
+  maquette\index.html:1006:          <a class="link-more">Voir les portées →</a>
+  maquette\index.html:1007:        </div>
+  maquette\index.html:1008:        <div class="pilier-card">
+  maquette\index.html:1009:          <div class="ic-wrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" 
+stroke="#e78808" stroke-width="1.5"><path d="M3 8l9-4 9 4-9 4-9-4z"/><path d="M7 11v4c0 1.5 2.2 3 5 3s5-1.5 
+5-3v-4"/></svg></div>
+  maquette\index.html:1010:          <h3>Éducation et comportement</h3>
+  maquette\index.html:1011:          <p>Bilan, rééducation, suivi personnalisé.</p>
+  maquette\index.html:1012:          <a class="link-more">Réserver un bilan →</a>
+  maquette\index.html:1013:        </div>
+  maquette\index.html:1014:        <div class="pilier-card">
+  maquette\index.html:1015:          <div class="ic-wrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" 
+stroke="#e78808" stroke-width="1.5"><path d="M2 19l3-3 14-1-3 4H2z"/><path d="M9 16l2-9 9 2-4 7"/><circle cx="11" 
+cy="6" r="1.4" fill="#e78808" stroke="none"/></svg></div>
+  maquette\index.html:1016:          <h3>Mushing & forêt</h3>
+  maquette\index.html:1017:          <p>Cani-rando, kart, vélo, traîneau selon saison.</p>
+  maquette\index.html:1018:          <a class="link-more">Suivre nos activités →</a>
+  maquette\index.html:1019:        </div>
+  maquette\index.html:1020:      </div>
+  maquette\index.html:1021:    </section>
+  maquette\index.html:1022:
+  maquette\index.html:1023:    <section class="section story">
+  maquette\index.html:1024:      <div class="story-grid">
+  maquette\index.html:1025:        <div class="story-photo" style="aspect-ratio:16/10;">
+  maquette\index.html:1026:          <img src="images/story-meute.png" alt="Quentin et sa meute" style="position: 
+absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; border-radius: 
+inherit; z-index: 0;">
+  maquette\index.html:1027:          <div class="crufts-tag">🏆 Crufts</div>
+  maquette\index.html:1028:        </div>
+  maquette\index.html:1029:        <div class="story-content">
+  maquette\index.html:1030:          <h2>Tout a commencé avec Wapi</h2>
+  maquette\index.html:1031:          <p>8 ans auprès des Huskies, installé au Chemin (Marne) pour offrir plus d'espace 
+à sa meute.</p>
+  maquette\index.html:1032:          <div class="story-stats">
+  maquette\index.html:1033:            <div class="s"><strong>8 ans</strong><span>d'expérience</span></div>
+  maquette\index.html:1034:            <div class="s"><strong>5+</strong><span>chiens adultes</span></div>
+  maquette\index.html:1035:            <div class="s"><strong>2024</strong><span>Crufts</span></div>
+  maquette\index.html:1036:          </div>
+  maquette\index.html:1037:        </div>
+  maquette\index.html:1038:      </div>
+  maquette\index.html:1039:    </section>
+  maquette\index.html:1040:
+  maquette\index.html:1041:    <section class="section education-section">
+  maquette\index.html:1042:      <div class="edu-intro">
+  maquette\index.html:1043:        <div class="eyebrow"><span class="dot"></span>ÉDUCATION ET COMPORTEMENT</div>
+  maquette\index.html:1044:        <h2 style="text-align:left;">Comprendre votre chien, pour mieux vivre à ses 
+côtés</h2>
+  maquette\index.html:1045:        <p>Un chien qui tire en laisse n'a pas besoin du même accompagnement qu'un chien 
+qui a peur de tout. Diplômé ACACED et certifié éducateur canin comportementaliste, Quentin distingue les deux et 
+adapte chaque suivi à votre situation réelle.</p>
+  maquette\index.html:1046:      </div>
+  maquette\index.html:1047:
+  maquette\index.html:1048:      <div class="edu-blocs-grid">
+  maquette\index.html:1049:        <div class="edu-bloc">
+  maquette\index.html:1050:          <h3>Éducation canine</h3>
+  maquette\index.html:1051:          <h4>Pour le quotidien</h4>
+  maquette\index.html:1052:          <p>Marche en laisse, rappel, sociabilisation, apprentissage des bases. 
+L'éducation canine répond aux petits désagréments qui rendent la vie à deux plus difficile qu'elle ne devrait 
+l'être.</p>
+  maquette\index.html:1053:        </div>
+  maquette\index.html:1054:        <div class="edu-bloc">
+  maquette\index.html:1055:          <h3>Comportementalisme</h3>
+  maquette\index.html:1056:          <h4>Pour les troubles plus profonds</h4>
+  maquette\index.html:1057:          <p>Agressivité, peurs, anxiété de séparation, réactivité. Le comportementalisme 
+intervient là où l'éducation classique ne suffit plus, pour comprendre l'origine du trouble avant de le corriger.</p>
+  maquette\index.html:1058:        </div>
+  maquette\index.html:1059:      </div>
+  maquette\index.html:1060:
+  maquette\index.html:1061:      <div class="process-steps">
+  maquette\index.html:1062:        <div class="process-step">
+  maquette\index.html:1063:          <div class="num">01</div>
+  maquette\index.html:1064:          <h4>Bilan comportemental</h4>
+  maquette\index.html:1065:          <p>On observe, on écoute, on comprend. Cette première rencontre permet 
+d'identifier précisément ce qui se joue chez votre chien, et ce qui est réellement possible de changer.</p>
+  maquette\index.html:1066:        </div>
+  maquette\index.html:1067:        <div class="process-step">
+  maquette\index.html:1068:          <div class="num">02</div>
+  maquette\index.html:1069:          <h4>Programme personnalisé</h4>
+  maquette\index.html:1070:          <p>Aucun chien ne ressemble à un autre. À partir du bilan, un accompagnement 
+sur-mesure est construit, adapté à son âge, son histoire et votre rythme de vie.</p>
+  maquette\index.html:1071:        </div>
+  maquette\index.html:1072:        <div class="process-step">
+  maquette\index.html:1073:          <div class="num">03</div>
+  maquette\index.html:1074:          <h4>Suivi</h4>
+  maquette\index.html:1075:          <p>L'éducation se construit dans la durée. Les séances de suivi consolident les 
+progrès et ajustent la méthode à mesure que la relation évolue.</p>
+  maquette\index.html:1076:        </div>
+  maquette\index.html:1077:      </div>
+  maquette\index.html:1078:
+  maquette\index.html:1079:      <div class="tarifs-container">
+  maquette\index.html:1080:        <div class="tarif-row highlight">
+  maquette\index.html:1081:          <span class="t-name">Bilan comportemental (1h à 1h30)</span>
+  maquette\index.html:1082:          <span class="t-price">50€</span>
+  maquette\index.html:1083:        </div>
+  maquette\index.html:1084:        <div class="tarif-row">
+  maquette\index.html:1085:          <span class="t-name">Forfait 5 séances de suivi (1h)</span>
+  maquette\index.html:1086:          <span class="t-price">325€</span>
+  maquette\index.html:1087:        </div>
+  maquette\index.html:1088:        <div class="tarif-row">
+  maquette\index.html:1089:          <span class="t-name">Forfait 10 séances de suivi (1h)</span>
+  maquette\index.html:1090:          <span class="t-price">550€</span>
+  maquette\index.html:1091:        </div>
+  maquette\index.html:1092:        <div class="tarif-row">
+  maquette\index.html:1093:          <span class="t-name">Séance de suivi à l'unité (hors forfait)</span>
+  maquette\index.html:1094:          <span class="t-price">60€</span>
+  maquette\index.html:1095:        </div>
+  maquette\index.html:1096:        <div class="tarif-row">
+  maquette\index.html:1097:          <span class="t-name">Séance de suivi à partir de la 11ème</span>
+  maquette\index.html:1098:          <span class="t-price">50€</span>
+  maquette\index.html:1099:        </div>
+  maquette\index.html:1100:        <div class="tarifs-note">Tarifs indicatifs, sur rendez-vous au Chemin (51800) ou à 
+domicile selon disponibilité.</div>
+  maquette\index.html:1101:        <div class="tarifs-cta">
+  maquette\index.html:1102:          <a class="btn-primary" style="justify-content:center; 
+text-align:center;">Réserver mon bilan comportemental →</a>
+  maquette\index.html:1103:        </div>
+  maquette\index.html:1104:      </div>
+  maquette\index.html:1105:    </section>
+  maquette\index.html:1106:
+  maquette\index.html:1107:    <section class="section activites">
+  maquette\index.html:1108:      <div class="section-head">
+  maquette\index.html:1109:        <div class="eyebrow"><span class="dot"></span>Toute l'année, toutes saisons</div>
+  maquette\index.html:1110:        <h2 style="text-align:left;">Le mushing ne s'arrête jamais</h2>
+  maquette\index.html:1111:        <p>Traîneau l'hiver, kart et vélo le reste de l'année — une activité physique 
+adaptée aux besoins naturels du Husky.</p>
+  maquette\index.html:1112:      </div>
+  maquette\index.html:1113:      <div class="activites-row">
+  maquette\index.html:1114:        <div class="act-card"><img src="images/traineau.png" class="img" style="width: 
+100%; object-fit: cover; object-position: center bottom;" alt="Traîneau sur neige"><div class="body"><span 
+class="tag">Hiver</span><h4>Traîneau sur neige</h4><p>Sorties encadrées en forêt enneigée.</p></div></div>
+  maquette\index.html:1115:        <div class="act-card"><img src="images/kart.png" class="img" style="width: 100%; 
+object-fit: cover;" alt="Cani-kart"><div class="body"><span class="tag">Toute 
+saison</span><h4>Cani-kart</h4><p>Sensations fortes tractées par la meute.</p></div></div>
+  maquette\index.html:1116:        <div class="act-card"><img src="images/velo.png" class="img" style="width: 100%; 
+object-fit: cover; object-position: center 20%;" alt="Bikepulka / vélo"><div class="body"><span class="tag">Toute 
+saison</span><h4>Bikepulka / vélo</h4><p>Pour les familles et sportifs.</p></div></div>
+  maquette\index.html:1117:        <div class="act-card"><img src="images/cani-rando.png" class="img" style="width: 
+100%; object-fit: cover;" alt="Cani-randonnée"><div class="body"><span class="tag">Toute 
+saison</span><h4>Cani-randonnée</h4><p>Balade en forêt, rythme tranquille.</p></div></div>
+  maquette\index.html:1118:      </div>
+  maquette\index.html:1119:    </section>
+  maquette\index.html:1120:
+  maquette\index.html:1121:    <section class="section contact-section">
+  maquette\index.html:1122:      <h2>Dites-nous ce qui vous amène</h2>
+  maquette\index.html:1123:      <p class="lead" style="font-size:14px;">Sélectionnez votre demande.</p>
+  maquette\index.html:1124:      <div class="contact-options">
+  maquette\index.html:1125:        <div class="contact-option is-selected" data-type="chiot"><div class="ic"><svg 
+width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e78808" stroke-width="1.6"><path d="M12 2C8 6 6 10 6 
+13a6 6 0 0012 0c0-3-2-7-6-11z"/></svg></div><div><strong>Adopter un chiot</strong><span>Voir les 
+portées</span></div></div>
+  maquette\index.html:1126:        <div class="contact-option" data-type="bilan"><div class="ic"><svg width="16" 
+height="16" viewBox="0 0 24 24" fill="none" stroke="#e78808" stroke-width="1.6"><path d="M3 8l9-4 9 4-9 4-9-4z"/><path 
+d="M7 11v4c0 1.5 2.2 3 5 3s5-1.5 5-3v-4"/></svg></div><div><strong>Bilan comportemental</strong><span>Éducation, 
+conseils</span></div></div>
+  maquette\index.html:1127:        <div class="contact-option" data-type="mushing"><div class="ic"><svg width="16" 
+height="16" viewBox="0 0 24 24" fill="none" stroke="#e78808" stroke-width="1.6"><path d="M2 19l3-3 14-1-3 4H2z"/><path 
+d="M9 16l2-9 9 2-4 7"/></svg></div><div><strong>Sortie mushing</strong><span>Cani-rando, kart</span></div></div>
+  maquette\index.html:1128:      </div>
+  maquette\index.html:1129:      <div class="form-card" style="margin-top:18px;">
+  maquette\index.html:1130:        <div id="form-chiot" class="form-content active">
+  maquette\index.html:1131:          <h3>Réserver un chiot</h3>
+  maquette\index.html:1132:          <div class="field"><label>Prénom et nom</label><input placeholder="Camille 
+Dupont"></div>
+  maquette\index.html:1133:          <div class="field"><label>Email</label><input 
+placeholder="camille@email.fr"></div>
+  maquette\index.html:1134:          <div class="field"><label>Téléphone</label><input placeholder="06 12 34 56 
+78"></div>
+  maquette\index.html:1135:          <div class="field"><label>Avez-vous déjà eu un Husky 
+?</label><select><option>Oui</option><option>Non, première fois</option></select></div>
+  maquette\index.html:1136:          <div class="field"><label>Message</label><textarea rows="3" placeholder="Votre 
+projet d'adoption..."></textarea></div>
+  maquette\index.html:1137:          <button class="btn-submit">Envoyer ma demande</button>
+  maquette\index.html:1138:          <p class="rgpd-note">En soumettant ce formulaire, vous acceptez que vos données 
+soient utilisées pour vous recontacter. Voir notre politique de confidentialité.</p>
+  maquette\index.html:1139:        </div>
+  maquette\index.html:1140:
+  maquette\index.html:1141:        <div id="form-bilan" class="form-content" style="display:none;">
+  maquette\index.html:1142:          <h3>Réserver mon bilan comportemental</h3>
+  maquette\index.html:1143:          <div class="field"><label>Prénom et nom</label><input placeholder="Camille 
+Dupont"></div>
+  maquette\index.html:1144:          <div class="field"><label>Email</label><input 
+placeholder="camille@email.fr"></div>
+  maquette\index.html:1145:          <div class="field"><label>Téléphone</label><input placeholder="06 12 34 56 
+78"></div>
+  maquette\index.html:1146:          <div class="field"><label>Quel est le problème rencontré ?</label>
+  maquette\index.html:1147:            <select>
+  maquette\index.html:1148:              <option>Marche en laisse, rappel, obéissance</option>
+  maquette\index.html:1149:              <option>Agressivité</option>
+  maquette\index.html:1150:              <option>Peurs, anxiété</option>
+  maquette\index.html:1151:              <option>Sociabilisation</option>
+  maquette\index.html:1152:              <option>Autre</option>
+  maquette\index.html:1153:            </select>
+  maquette\index.html:1154:          </div>
+  maquette\index.html:1155:          <div class="field"><label>Message</label><textarea rows="3" 
+placeholder="Parlez-nous du comportement de votre chien..."></textarea></div>
+  maquette\index.html:1156:          <button class="btn-submit">Envoyer ma demande</button>
+  maquette\index.html:1157:          <p class="rgpd-note">En soumettant ce formulaire, vous acceptez que vos données 
+soient utilisées pour vous recontacter. Voir notre politique de confidentialité.</p>
+  maquette\index.html:1158:        </div>
+  maquette\index.html:1159:
+  maquette\index.html:1160:        <div id="form-mushing" class="form-content" style="display:none;">
+  maquette\index.html:1161:          <h3>Bientôt disponible</h3>
+  maquette\index.html:1162:          <p 
+style="font-size:15px;line-height:1.6;color:var(--nuit-l);margin-bottom:24px;">Cette activité est encore en cours de 
+structuration. Suivez nos sorties sur les réseaux sociaux ou contactez-nous directement pour plus d'informations.</p>
+  maquette\index.html:1163:          <a href="#" class="btn-primary" style="display:inline-flex;">Découvrir la page 
+mushing</a>
+  maquette\index.html:1164:        </div>
+  maquette\index.html:1165:      </div>
+  maquette\index.html:1166:    </section>
+  maquette\index.html:1167:
+  maquette\index.html:1168:    <footer class="site-footer">
+  maquette\index.html:1169:      <div class="footer-grid">
+  maquette\index.html:1170:        <div>
+  maquette\index.html:1171:          <div class="footer-logo" style="font-size:15px;"><img 
+src="images/logo-wapidogs.png" alt="Wapidogs Family" style="height:72px;width:auto;filter:brightness(1.3);"></div>
+  maquette\index.html:1172:          <p>1 rue Basse, 51800 Le Chemin</p>
+  maquette\index.html:1173:          <div class="social-row" style="margin-top:16px;">
+  maquette\index.html:1174:            <a>f</a><a>ig</a><a>tt</a>
+  maquette\index.html:1175:          </div>
+  maquette\index.html:1176:          <h5 style="margin-top:24px;">À propos</h5>
+  maquette\index.html:1177:          <ul><li>Qui sommes-nous</li><li>Le palmarès de Wapi</li><li>Avis</li></ul>
+  maquette\index.html:1178:        </div>
+  maquette\index.html:1179:        <div>
+  maquette\index.html:1180:          <h5>Activités</h5>
+  maquette\index.html:1181:          <ul><li>Élevage</li><li>Éducation</li><li>Mushing</li><li>Blog</li></ul>
+  maquette\index.html:1182:          <h5 style="margin-top:24px;">Contact</h5>
+  maquette\index.html:1183:          <ul><li>contact@wapidogsfamily.fr</li><li>+33 7 45 04 93 48</li></ul>
+  maquette\index.html:1184:        </div>
+  maquette\index.html:1185:      </div>
+  maquette\index.html:1186:      <div class="footer-bottom">
+  maquette\index.html:1187:        <span>© 2026 Wapidogs Family</span>
+  maquette\index.html:1188:        <span>Mentions légales · Politique de confidentialité (RGPD)</span>
+  maquette\index.html:1189:      </div>
+  maquette\index.html:1190:    </footer>
+  maquette\index.html:1191:
+  maquette\index.html:1192:  </div>
+  maquette\index.html:1193:
+  maquette\index.html:1194:
+  maquette\index.html:1195:  <div class="device mobile">
+  maquette\index.html:1196:
+  maquette\index.html:1197:    <header class="site-header">
+  maquette\index.html:1198:      <div class="logo" style="font-size:16px;">
+  maquette\index.html:1199:        <img src="images/logo-wapidogs.png" alt="Wapidogs Family" 
+style="height:76px;width:auto;">
+  maquette\index.html:1200:      </div>
+  maquette\index.html:1201:      <div class="mobile-nav-icon">☰</div>
+  maquette\index.html:1202:    </header>
+  maquette\index.html:1203:
+  maquette\index.html:1204:    <div class="mobile-menu-overlay">
+  maquette\index.html:1205:      <div class="close-btn">✕</div>
+  maquette\index.html:1206:      <a>Élevage</a>
+  maquette\index.html:1207:      <a>Éducation canine</a>
+  maquette\index.html:1208:      <a>Mushing & forêt</a>
+  maquette\index.html:1209:      <a>Blog</a>
+  maquette\index.html:1210:      <a>Qui sommes-nous</a>
+  maquette\index.html:1211:      <a style="color:var(--ambre);">Nous contacter</a>
+  maquette\index.html:1212:    </div>
+  maquette\index.html:1213:
+  maquette\index.html:1214:    <section class="hero">
+  maquette\index.html:1215:      <div class="hero-grid">
+  maquette\index.html:1216:        <div>
+  maquette\index.html:1217:          <div class="eyebrow" style="font-size:11px;"><span class="dot"></span>Le Chemin, 
+51800</div>
+  maquette\index.html:1218:          <h1>L'esprit du Grand Nord, <em>cultivé avec exigence</em></h1>
+  maquette\index.html:1219:          <p class="lead" style="font-size:14px;">Chiots Husky LOF, éducation 
+comportementale certifiée et sorties mushing en forêt.</p>
+  maquette\index.html:1220:          <div class="hero-ctas" style="flex-direction:column;">
+  maquette\index.html:1221:            <a class="btn-primary" style="justify-content:center;">Voir les chiots 
+disponibles →</a>
+  maquette\index.html:1222:            <a class="btn-secondary" style="text-align:center;">Découvrir nos sorties</a>
+  maquette\index.html:1223:          </div>
+  maquette\index.html:1224:        </div>
+  maquette\index.html:1225:        <div class="hero-visual">
+  maquette\index.html:1226:          <div class="hero-photo-card">
+  maquette\index.html:1227:            <img src="images/photo-hero-accueil.png" alt="Quentin et Wapi" 
+style="aspect-ratio: 4/5; border-radius: 12px; width: 100%; object-fit: cover; display: block;">
+  maquette\index.html:1228:          </div>
+  maquette\index.html:1229:          <div class="badge-float" style="font-size:11px;"><span>1er</span>Plus grand 
+concours canin du monde (Crufts, Angleterre)</div>
+  maquette\index.html:1230:        </div>
+  maquette\index.html:1231:        <div class="hero-proof" style="margin-top:18px;">
+  maquette\index.html:1232:          <div class="proof-item"><strong>8 ans</strong>d'expérience</div>
+  maquette\index.html:1233:          <div class="proof-item"><strong>Crufts</strong>plus grand concours canin du 
+monde</div>
+  maquette\index.html:1234:          <div class="proof-item"><strong>Diplômé ACACED</strong>Éleveur et éducateur 
+certifiés</div>
+  maquette\index.html:1235:        </div>
+  maquette\index.html:1236:      </div>
+  maquette\index.html:1237:    </section>
+  maquette\index.html:1238:
+  maquette\index.html:1239:    <div class="trust-bar">
+  maquette\index.html:1240:      <div class="trust-item"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 
+24" fill="none" stroke="#0258bf" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg></span>Chiots LOF</div>
+  maquette\index.html:1241:      <div class="trust-item"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 
+24" fill="none" stroke="#0258bf" stroke-width="1.8"><path d="M3 8l9-4 9 4-9 4-9-4z"/><path d="M7 11v4c0 1.5 2.2 3 5 
+3s5-1.5 5-3v-4"/></svg></span>Certifié</div>
+  maquette\index.html:1242:      <div class="trust-item"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 
+24" fill="none" stroke="#0258bf" stroke-width="1.8"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 01-10 0V4z"/><path d="M7 
+6H4a3 3 0 003 5M17 6h3a3 3 0 01-3 5"/></svg></span>Palmarès</div>
+  maquette\index.html:1243:    </div>
+  maquette\index.html:1244:
+  maquette\index.html:1245:    <section class="section">
+  maquette\index.html:1246:      <div class="section-head">
+  maquette\index.html:1247:        <div class="eyebrow" style="justify-content:flex-start;font-size:11px;"><span 
+class="dot"></span>Trois savoir-faire</div>
+  maquette\index.html:1248:        <h2 style="text-align:left;">Ce que nous proposons</h2>
+  maquette\index.html:1249:      </div>
+  maquette\index.html:1250:      <div class="piliers-grid">
+  maquette\index.html:1251:        <div class="pilier-card">
+  maquette\index.html:1252:          <div class="ic-wrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" 
+stroke="#e78808" stroke-width="1.5"><path d="M12 2C8 6 6 10 6 13a6 6 0 0012 0c0-3-2-7-6-11z"/><path d="M9 13a3 3 0 006 
+0"/></svg></div>
+  maquette\index.html:1253:          <h3>Élevage Husky sibérien</h3>
+  maquette\index.html:1254:          <p>Lignées primées, chiots sociabilisés, suivi à vie.</p>
+  maquette\index.html:1255:          <a class="link-more">Voir les portées →</a>
+  maquette\index.html:1256:        </div>
+  maquette\index.html:1257:        <div class="pilier-card">
+  maquette\index.html:1258:          <div class="ic-wrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" 
+stroke="#e78808" stroke-width="1.5"><path d="M3 8l9-4 9 4-9 4-9-4z"/><path d="M7 11v4c0 1.5 2.2 3 5 3s5-1.5 
+5-3v-4"/></svg></div>
+  maquette\index.html:1259:          <h3>Éducation et comportement</h3>
+  maquette\index.html:1260:          <p>Bilan, rééducation, suivi personnalisé.</p>
+  maquette\index.html:1261:          <a class="link-more">Réserver un bilan →</a>
+  maquette\index.html:1262:        </div>
+  maquette\index.html:1263:        <div class="pilier-card">
+  maquette\index.html:1264:          <div class="ic-wrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" 
+stroke="#e78808" stroke-width="1.5"><path d="M2 19l3-3 14-1-3 4H2z"/><path d="M9 16l2-9 9 2-4 7"/><circle cx="11" 
+cy="6" r="1.4" fill="#e78808" stroke="none"/></svg></div>
+  maquette\index.html:1265:          <h3>Mushing & forêt</h3>
+  maquette\index.html:1266:          <p>Cani-rando, kart, vélo, traîneau selon saison.</p>
+  maquette\index.html:1267:          <a class="link-more">Suivre nos activités →</a>
+  maquette\index.html:1268:        </div>
+  maquette\index.html:1269:      </div>
+  maquette\index.html:1270:    </section>
+  maquette\index.html:1271:
+  maquette\index.html:1272:    <section class="section story">
+  maquette\index.html:1273:      <div class="story-grid">
+  maquette\index.html:1274:        <div class="story-photo" style="aspect-ratio:16/10;">
+  maquette\index.html:1275:          <img src="images/story-meute.png" alt="Quentin et sa meute" style="position: 
+absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; border-radius: 
+inherit; z-index: 0;">
+  maquette\index.html:1276:          <div class="crufts-tag">🏆 Crufts</div>
+  maquette\index.html:1277:        </div>
+  maquette\index.html:1278:        <div class="story-content">
+  maquette\index.html:1279:          <h2>Tout a commencé avec Wapi</h2>
+  maquette\index.html:1280:          <p>8 ans auprès des Huskies, installé au Chemin (Marne) pour offrir plus d'espace 
+à sa meute.</p>
+  maquette\index.html:1281:          <div class="story-stats">
+  maquette\index.html:1282:            <div class="s"><strong>8 ans</strong><span>d'expérience</span></div>
+  maquette\index.html:1283:            <div class="s"><strong>5+</strong><span>chiens adultes</span></div>
+  maquette\index.html:1284:            <div class="s"><strong>2024</strong><span>Crufts</span></div>
+  maquette\index.html:1285:          </div>
+  maquette\index.html:1286:        </div>
+  maquette\index.html:1287:      </div>
+  maquette\index.html:1288:    </section>
+  maquette\index.html:1289:
+  maquette\index.html:1290:    <section class="section education-section">
+  maquette\index.html:1291:      <div class="edu-intro">
+  maquette\index.html:1292:        <div class="eyebrow"><span class="dot"></span>ÉDUCATION ET COMPORTEMENT</div>
+  maquette\index.html:1293:        <h2 style="text-align:left;">Comprendre votre chien, pour mieux vivre à ses 
+côtés</h2>
+  maquette\index.html:1294:        <p>Un chien qui tire en laisse n'a pas besoin du même accompagnement qu'un chien 
+qui a peur de tout. Diplômé ACACED et certifié éducateur canin comportementaliste, Quentin distingue les deux et 
+adapte chaque suivi à votre situation réelle.</p>
+  maquette\index.html:1295:      </div>
+  maquette\index.html:1296:
+  maquette\index.html:1297:      <div class="edu-blocs-grid">
+  maquette\index.html:1298:        <div class="edu-bloc">
+  maquette\index.html:1299:          <h3>Éducation canine</h3>
+  maquette\index.html:1300:          <h4>Pour le quotidien</h4>
+  maquette\index.html:1301:          <p>Marche en laisse, rappel, sociabilisation, apprentissage des bases. 
+L'éducation canine répond aux petits désagréments qui rendent la vie à deux plus difficile qu'elle ne devrait 
+l'être.</p>
+  maquette\index.html:1302:        </div>
+  maquette\index.html:1303:        <div class="edu-bloc">
+  maquette\index.html:1304:          <h3>Comportementalisme</h3>
+  maquette\index.html:1305:          <h4>Pour les troubles plus profonds</h4>
+  maquette\index.html:1306:          <p>Agressivité, peurs, anxiété de séparation, réactivité. Le comportementalisme 
+intervient là où l'éducation classique ne suffit plus, pour comprendre l'origine du trouble avant de le corriger.</p>
+  maquette\index.html:1307:        </div>
+  maquette\index.html:1308:      </div>
+  maquette\index.html:1309:
+  maquette\index.html:1310:      <div class="process-steps">
+  maquette\index.html:1311:        <div class="process-step">
+  maquette\index.html:1312:          <div class="num">01</div>
+  maquette\index.html:1313:          <h4>Bilan comportemental</h4>
+  maquette\index.html:1314:          <p>On observe, on écoute, on comprend. Cette première rencontre permet 
+d'identifier précisément ce qui se joue chez votre chien, et ce qui est réellement possible de changer.</p>
+  maquette\index.html:1315:        </div>
+  maquette\index.html:1316:        <div class="process-step">
+  maquette\index.html:1317:          <div class="num">02</div>
+  maquette\index.html:1318:          <h4>Programme personnalisé</h4>
+  maquette\index.html:1319:          <p>Aucun chien ne ressemble à un autre. À partir du bilan, un accompagnement 
+sur-mesure est construit, adapté à son âge, son histoire et votre rythme de vie.</p>
+  maquette\index.html:1320:        </div>
+  maquette\index.html:1321:        <div class="process-step">
+  maquette\index.html:1322:          <div class="num">03</div>
+  maquette\index.html:1323:          <h4>Suivi</h4>
+  maquette\index.html:1324:          <p>L'éducation se construit dans la durée. Les séances de suivi consolident les 
+progrès et ajustent la méthode à mesure que la relation évolue.</p>
+  maquette\index.html:1325:        </div>
+  maquette\index.html:1326:      </div>
+  maquette\index.html:1327:
+  maquette\index.html:1328:      <div class="tarifs-container">
+  maquette\index.html:1329:        <div class="tarif-row highlight">
+  maquette\index.html:1330:          <span class="t-name">Bilan comportemental (1h à 1h30)</span>
+  maquette\index.html:1331:          <span class="t-price">50€</span>
+  maquette\index.html:1332:        </div>
+  maquette\index.html:1333:        <div class="tarif-row">
+  maquette\index.html:1334:          <span class="t-name">Forfait 5 séances de suivi (1h)</span>
+  maquette\index.html:1335:          <span class="t-price">325€</span>
+  maquette\index.html:1336:        </div>
+  maquette\index.html:1337:        <div class="tarif-row">
+  maquette\index.html:1338:          <span class="t-name">Forfait 10 séances de suivi (1h)</span>
+  maquette\index.html:1339:          <span class="t-price">550€</span>
+  maquette\index.html:1340:        </div>
+  maquette\index.html:1341:        <div class="tarif-row">
+  maquette\index.html:1342:          <span class="t-name">Séance de suivi à l'unité (hors forfait)</span>
+  maquette\index.html:1343:          <span class="t-price">60€</span>
+  maquette\index.html:1344:        </div>
+  maquette\index.html:1345:        <div class="tarif-row">
+  maquette\index.html:1346:          <span class="t-name">Séance de suivi à partir de la 11ème</span>
+  maquette\index.html:1347:          <span class="t-price">50€</span>
+  maquette\index.html:1348:        </div>
+  maquette\index.html:1349:        <div class="tarifs-note">Tarifs indicatifs, sur rendez-vous au Chemin (51800) ou à 
+domicile selon disponibilité.</div>
+  maquette\index.html:1350:        <div class="tarifs-cta">
+  maquette\index.html:1351:          <a class="btn-primary" style="justify-content:center; 
+text-align:center;">Réserver mon bilan comportemental →</a>
+  maquette\index.html:1352:        </div>
+  maquette\index.html:1353:      </div>
+  maquette\index.html:1354:    </section>
+  maquette\index.html:1355:
+  maquette\index.html:1356:    <section class="section activites">
+  maquette\index.html:1357:      <div class="section-head">
+  maquette\index.html:1358:        <div class="eyebrow"><span class="dot"></span>Toute l'année, toutes saisons</div>
+  maquette\index.html:1359:        <h2 style="text-align:left;">Le mushing ne s'arrête jamais</h2>
+  maquette\index.html:1360:        <p>Traîneau l'hiver, kart et vélo le reste de l'année — une activité physique 
+adaptée aux besoins naturels du Husky.</p>
+  maquette\index.html:1361:      </div>
+  maquette\index.html:1362:      <div class="activites-row">
+  maquette\index.html:1363:        <div class="act-card"><img src="images/traineau.png" class="img" style="width: 
+100%; object-fit: cover; object-position: center bottom;" alt="Traîneau sur neige"><div class="body"><span 
+class="tag">Hiver</span><h4>Traîneau sur neige</h4><p>Sorties encadrées en forêt enneigée.</p></div></div>
+  maquette\index.html:1364:        <div class="act-card"><img src="images/kart.png" class="img" style="width: 100%; 
+object-fit: cover;" alt="Cani-kart"><div class="body"><span class="tag">Toute 
+saison</span><h4>Cani-kart</h4><p>Sensations fortes tractées par la meute.</p></div></div>
+  maquette\index.html:1365:        <div class="act-card"><img src="images/velo.png" class="img" style="width: 100%; 
+object-fit: cover; object-position: center 20%;" alt="Bikepulka / vélo"><div class="body"><span class="tag">Toute 
+saison</span><h4>Bikepulka / vélo</h4><p>Pour les familles et sportifs.</p></div></div>
+  maquette\index.html:1366:        <div class="act-card"><img src="images/cani-rando.png" class="img" style="width: 
+100%; object-fit: cover;" alt="Cani-randonnée"><div class="body"><span class="tag">Toute 
+saison</span><h4>Cani-randonnée</h4><p>Balade en forêt, rythme tranquille.</p></div></div>
+  maquette\index.html:1367:      </div>
+  maquette\index.html:1368:    </section>
+  maquette\index.html:1369:
+  maquette\index.html:1370:    <section class="section contact-section">
+  maquette\index.html:1371:      <h2>Dites-nous ce qui vous amène</h2>
+  maquette\index.html:1372:      <p class="lead" style="font-size:14px;">Sélectionnez votre demande.</p>
+  maquette\index.html:1373:      <div class="contact-options">
+  maquette\index.html:1374:        <div class="contact-option is-selected" data-type="chiot"><div class="ic"><svg 
+width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e78808" stroke-width="1.6"><path d="M12 2C8 6 6 10 6 
+13a6 6 0 0012 0c0-3-2-7-6-11z"/></svg></div><div><strong>Adopter un chiot</strong><span>Voir les 
+portées</span></div></div>
+  maquette\index.html:1375:        <div class="contact-option" data-type="bilan"><div class="ic"><svg width="16" 
+height="16" viewBox="0 0 24 24" fill="none" stroke="#e78808" stroke-width="1.6"><path d="M3 8l9-4 9 4-9 4-9-4z"/><path 
+d="M7 11v4c0 1.5 2.2 3 5 3s5-1.5 5-3v-4"/></svg></div><div><strong>Bilan comportemental</strong><span>Éducation, 
+conseils</span></div></div>
+  maquette\index.html:1376:        <div class="contact-option" data-type="mushing"><div class="ic"><svg width="16" 
+height="16" viewBox="0 0 24 24" fill="none" stroke="#e78808" stroke-width="1.6"><path d="M2 19l3-3 14-1-3 4H2z"/><path 
+d="M9 16l2-9 9 2-4 7"/></svg></div><div><strong>Sortie mushing</strong><span>Cani-rando, kart</span></div></div>
+  maquette\index.html:1377:      </div>
+  maquette\index.html:1378:      <div class="form-card" style="margin-top:18px;">
+  maquette\index.html:1379:        <div id="form-chiot" class="form-content active">
+  maquette\index.html:1380:          <h3>Réserver un chiot</h3>
+  maquette\index.html:1381:          <div class="field"><label>Prénom et nom</label><input placeholder="Camille 
+Dupont"></div>
+  maquette\index.html:1382:          <div class="field"><label>Email</label><input 
+placeholder="camille@email.fr"></div>
+  maquette\index.html:1383:          <div class="field"><label>Téléphone</label><input placeholder="06 12 34 56 
+78"></div>
+  maquette\index.html:1384:          <div class="field"><label>Avez-vous déjà eu un Husky 
+?</label><select><option>Oui</option><option>Non, première fois</option></select></div>
+  maquette\index.html:1385:          <div class="field"><label>Message</label><textarea rows="3" placeholder="Votre 
+projet d'adoption..."></textarea></div>
+  maquette\index.html:1386:          <button class="btn-submit">Envoyer ma demande</button>
+  maquette\index.html:1387:          <p class="rgpd-note">En soumettant ce formulaire, vous acceptez que vos données 
+soient utilisées pour vous recontacter. Voir notre politique de confidentialité.</p>
+  maquette\index.html:1388:        </div>
+  maquette\index.html:1389:
+  maquette\index.html:1390:        <div id="form-bilan" class="form-content" style="display:none;">
+  maquette\index.html:1391:          <h3>Réserver mon bilan comportemental</h3>
+  maquette\index.html:1392:          <div class="field"><label>Prénom et nom</label><input placeholder="Camille 
+Dupont"></div>
+  maquette\index.html:1393:          <div class="field"><label>Email</label><input 
+placeholder="camille@email.fr"></div>
+  maquette\index.html:1394:          <div class="field"><label>Téléphone</label><input placeholder="06 12 34 56 
+78"></div>
+  maquette\index.html:1395:          <div class="field"><label>Quel est le problème rencontré ?</label>
+  maquette\index.html:1396:            <select>
+  maquette\index.html:1397:              <option>Marche en laisse, rappel, obéissance</option>
+  maquette\index.html:1398:              <option>Agressivité</option>
+  maquette\index.html:1399:              <option>Peurs, anxiété</option>
+  maquette\index.html:1400:              <option>Sociabilisation</option>
+  maquette\index.html:1401:              <option>Autre</option>
+  maquette\index.html:1402:            </select>
+  maquette\index.html:1403:          </div>
+  maquette\index.html:1404:          <div class="field"><label>Message</label><textarea rows="3" 
+placeholder="Parlez-nous du comportement de votre chien..."></textarea></div>
+  maquette\index.html:1405:          <button class="btn-submit">Envoyer ma demande</button>
+  maquette\index.html:1406:          <p class="rgpd-note">En soumettant ce formulaire, vous acceptez que vos données 
+soient utilisées pour vous recontacter. Voir notre politique de confidentialité.</p>
+  maquette\index.html:1407:        </div>
+  maquette\index.html:1408:
+  maquette\index.html:1409:        <div id="form-mushing" class="form-content" style="display:none;">
+  maquette\index.html:1410:          <h3>Bientôt disponible</h3>
+  maquette\index.html:1411:          <p 
+style="font-size:15px;line-height:1.6;color:var(--nuit-l);margin-bottom:24px;">Cette activité est encore en cours de 
+structuration. Suivez nos sorties sur les réseaux sociaux ou contactez-nous directement pour plus d'informations.</p>
+  maquette\index.html:1412:          <a href="#" class="btn-primary" style="display:inline-flex;">Découvrir la page 
+mushing</a>
+  maquette\index.html:1413:        </div>
+  maquette\index.html:1414:      </div>
+  maquette\index.html:1415:    </section>
+  maquette\index.html:1416:
+  maquette\index.html:1417:    <footer class="site-footer">
+  maquette\index.html:1418:      <div class="footer-grid">
+  maquette\index.html:1419:        <div>
+  maquette\index.html:1420:          <div class="footer-logo" style="font-size:15px;"><img 
+src="images/logo-wapidogs.png" alt="Wapidogs Family" style="height:72px;width:auto;filter:brightness(1.3);"></div>
+  maquette\index.html:1421:          <p>1 rue Basse, 51800 Le Chemin</p>
+  maquette\index.html:1422:          <div class="social-row" style="margin-top:16px;">
+  maquette\index.html:1423:            <a>f</a><a>ig</a><a>tt</a>
+  maquette\index.html:1424:          </div>
+  maquette\index.html:1425:          <h5 style="margin-top:24px;">À propos</h5>
+  maquette\index.html:1426:          <ul><li>Qui sommes-nous</li><li>Le palmarès de Wapi</li><li>Avis</li></ul>
+  maquette\index.html:1427:        </div>
+  maquette\index.html:1428:        <div>
+  maquette\index.html:1429:          <h5>Activités</h5>
+  maquette\index.html:1430:          <ul><li>Élevage</li><li>Éducation</li><li>Mushing</li><li>Blog</li></ul>
+  maquette\index.html:1431:          <h5 style="margin-top:24px;">Contact</h5>
+  maquette\index.html:1432:          <ul><li>contact@wapidogsfamily.fr</li><li>+33 7 45 04 93 48</li></ul>
+  maquette\index.html:1433:        </div>
+  maquette\index.html:1434:      </div>
+  maquette\index.html:1435:      <div class="footer-bottom">
+  maquette\index.html:1436:        <span>© 2026 Wapidogs Family</span>
+  maquette\index.html:1437:        <span>Mentions légales · Politique de confidentialité (RGPD)</span>
+  maquette\index.html:1438:      </div>
+  maquette\index.html:1439:    </footer>
+  maquette\index.html:1440:
+  maquette\index.html:1441:  </div>
+  maquette\index.html:1442:
+  maquette\index.html:1443:</div>
+  maquette\index.html:1444:
+  maquette\index.html:1445:<script>
+  maquette\index.html:1446:
+  maquette\index.html:1447:
+  maquette\index.html:1448:document.querySelectorAll('.contact-option').forEach(opt => {
+  maquette\index.html:1449:  opt.addEventListener('click', () => {
+  maquette\index.html:1450:    // 1. Gérer l'état visuel de l'option
+  maquette\index.html:1451:    const optionsContainer = opt.closest('.contact-options');
+  maquette\index.html:1452:    optionsContainer.querySelectorAll('.contact-option').forEach(o => 
+o.classList.remove('is-selected'));
+  maquette\index.html:1453:    opt.classList.add('is-selected');
+  maquette\index.html:1454:    
+  maquette\index.html:1455:    // 2. Gérer l'affichage dynamique du formulaire de droite
+  maquette\index.html:1456:    const type = opt.getAttribute('data-type');
+  maquette\index.html:1457:    // Trouver le conteneur global (.contact-grid en desktop, ou .contact-section en 
+mobile/tablette)
+  maquette\index.html:1458:    const section = opt.closest('.contact-grid') || opt.closest('.contact-section');
+  maquette\index.html:1459:    const formCard = section.querySelector('.form-card');
+  maquette\index.html:1460:    
+  maquette\index.html:1461:    // Masquer tous les formulaires
+  maquette\index.html:1462:    formCard.querySelectorAll('.form-content').forEach(form => {
+  maquette\index.html:1463:      form.style.display = 'none';
+  maquette\index.html:1464:      form.classList.remove('active');
+  maquette\index.html:1465:    });
+  maquette\index.html:1466:    
+  maquette\index.html:1467:    // Afficher le bon formulaire
+  maquette\index.html:1468:    const targetForm = formCard.querySelector('#form-' + type);
+  maquette\index.html:1469:    if (targetForm) {
+  maquette\index.html:1470:      targetForm.style.display = 'block';
+  maquette\index.html:1471:      targetForm.classList.add('active');
+  maquette\index.html:1472:    }
+  maquette\index.html:1473:  });
+  maquette\index.html:1474:});
+  maquette\index.html:1475:
+  maquette\index.html:1476:// --- GESTION DU MENU BURGER (INDEPENDANT PAR VUE) ---
+  maquette\index.html:1477:document.querySelectorAll('.mobile-nav-icon').forEach(icon => {
+  maquette\index.html:1478:  icon.addEventListener('click', () => {
+  maquette\index.html:1479:    // Chercher le device parent de l'icône cliquée
+  maquette\index.html:1480:    const device = icon.closest('.device');
+  maquette\index.html:1481:    // Ouvrir uniquement l'overlay qui se trouve dans ce même device
+  maquette\index.html:1482:    const overlay = device.querySelector('.mobile-menu-overlay');
+  maquette\index.html:1483:    if (overlay) overlay.classList.add('open');
+  maquette\index.html:1484:  });
+  maquette\index.html:1485:});
+  maquette\index.html:1486:
+  maquette\index.html:1487:document.querySelectorAll('.mobile-menu-overlay .close-btn').forEach(btn => {
+  maquette\index.html:1488:  btn.addEventListener('click', () => {
+  maquette\index.html:1489:    // Fermer spécifiquement l'overlay qui contient ce bouton de fermeture
+  maquette\index.html:1490:    const overlay = btn.closest('.mobile-menu-overlay');
+  maquette\index.html:1491:    if (overlay) overlay.classList.remove('open');
+  maquette\index.html:1492:  });
+  maquette\index.html:1493:});
+  maquette\index.html:1494:</script>
+  maquette\index.html:1495:
+  maquette\index.html:1496:</body>
+  maquette\index.html:1497:</html>
+
+

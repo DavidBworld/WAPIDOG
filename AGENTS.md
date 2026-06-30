@@ -1,6 +1,42 @@
 # Wapidogs Family — Contexte du projet
 
-## ⚠️ Phase actuelle du projet — LIRE EN PREMIER
+## 📍 ÉTAT D'AVANCEMENT DÉTAILLÉ — au 30/06/2026, à lire en tout premier
+
+**Résumé ultra-rapide** : la page d'accueil (`index.php`) est développée en PHP, fonctionne en local via XAMPP (`http://localhost/wapidogs/`), a traversé une refonte visuelle complète façon Esprit Dog (hero pleine largeur, blocs piliers alternés, bandeau presse), et plusieurs cycles de corrections fines. Le formulaire de contact (HTML) est prêt mais **pas encore branché à une vraie base de données** — c'est la prochaine étape technique. Aucune autre page que l'accueil n'a encore été créée.
+
+### Ce qui est fait et fonctionnel
+- Structure du projet PHP : `index.php`, `includes/header.php`, `includes/footer.php`, `assets/css/style.css`, `assets/js/main.js`, dossier `images/`
+- Jonction XAMPP créée : `C:\xampp\htdocs\wapidogs` pointe vers `C:\Users\david\Desktop\WAPIDOG` — le site est testable en local sur `http://localhost/wapidogs/`
+- La maquette HTML d'origine est isolée dans le dossier `maquette/` (fichiers `index.html` et `index-backup.html`), à ne pas confondre avec le vrai projet PHP
+- Header et footer communs en place (réutilisables pour les futures pages)
+- Formulaire de contact HTML complet avec tunnel à 3 options (chiot/bilan/mushing désactivé), balises `<form>` correctement fermées, champs `name`/`required` en place, champ caché `type_demande` mis à jour en JS selon l'option cliquée
+- Bug majeur résolu : un premier passage d'extraction de la maquette vers PHP via PowerShell avait corrompu l'encodage UTF-8 (accents cassés partout) — tout a été recréé proprement avec l'outil d'édition de fichier natif d'Antigravity, accents vérifiés et confirmés intacts
+- Refonte visuelle complète appliquée (voir section dédiée plus bas) : hero pleine largeur avec photo de fond, 3 piliers en blocs alternés (image/texte), bandeau de réassurance retravaillé, nouveau bandeau presse/réseaux sociaux avec 4 logos cliquables
+- Plusieurs cycles de corrections fines déjà faits : cadrage des photos (object-position ajusté sur plusieurs images dont hero et bloc Éducation), taille des logos presse, icône manquante "Le Chemin" dans la trust-bar restaurée et étendue à toutes les vues, tailles de texte et espacement du hero sur tablette, taille du logo dans le header (+50%, sans toucher à la hauteur du header)
+- Bandeau de présentation cosmétique (desktop/tablette/mobile avec boutons de bascule) retiré — le site est maintenant nativement responsive via media queries CSS (plus besoin de boutons pour changer de vue, ça se fait par la largeur réelle du navigateur)
+- Menu burger fonctionnel sur tablette et mobile (bug de menu qui s'ouvrait tout seul corrigé, bouton fermeture ✕ visible et fonctionnel)
+
+### En cours / dernière action lancée (pas encore confirmée terminée)
+- Ajout d'un header sticky (reste fixe en haut au scroll, devient blanc avec ombre après 50px de scroll) — plan validé et envoyé à Antigravity, résultat pas encore vérifié visuellement par l'utilisateur
+- Ajout d'un encart "avis Google" dans le hero (image `google-avis.png` fournie par le client : logo Google + 5 étoiles, SANS préciser de nombre d'avis puisque Quentin n'a qu'1 seul avis pour l'instant) — même plan, même statut : envoyé mais pas encore vérifié
+
+### Pas encore commencé
+- Base de données MySQL (table `contacts`) — en local d'abord via phpMyAdmin/XAMPP, schéma déjà défini dans AGENTS.md (voir section Stack technique)
+- Script `submit_contact.php` (réception du POST, insertion en base, requêtes préparées PDO, envoi email à contact@wapidogs-family.fr, redirection avec message de succès)
+- Toutes les autres pages du site (élevage, éducation détaillée, mushing, qui-sommes-nous, palmarès, contact dédiée, blog + 3 articles, mentions légales, RGPD) — seule la page d'accueil existe à ce jour
+- Déploiement réel sur Hostinger (le domaine wapidogs-family.fr est acheté et l'hébergement créé sur le plan Business existant, mais rien n'y a encore été uploadé)
+- Configuration de l'email pro contact@wapidogs-family.fr sur Hostinger
+
+### Fichiers images déjà présents dans images/ (noms exacts)
+logo-wapidogs.png, photo-hero-accueil.png (ancienne, plus utilisée en hero), story-meute.png, traineau.png, kart.png, velo.png, cani-rando.png, hero-large.png, pilier-elevage.png, pilier-education.png, pilier-mushing.png, logo-sudinfo.png, logo-dhsport.png, logo-instagram.png, logo-facebook.png, google-avis.png
+
+### Repos et outils
+- Repo GitHub : github.com/DavidBworld/WAPIDOG (public), dossier local sur le Bureau Windows de l'utilisateur
+- Agent de développement : Antigravity (Gemini en agent), mode de sécurité "Default" (validation manuelle de chaque commande)
+- L'utilisateur (David, agence) communique avec Claude qui prépare les prompts précis à copier-coller dans Antigravity, et guide la validation des commandes une à une
+- Process de travail éprouvé : toujours demander un plan avant exécution, valider un changement à la fois plutôt que d'empiler, vérifier visuellement après chaque modification importante (l'utilisateur ouvre http://localhost/wapidogs/ et envoie des captures d'écran)
+
+## Phase actuelle du projet
 
 **La maquette UX/UI a été validée. Le développement réel (HTML/CSS/JS + PHP + MySQL, hébergé sur Hostinger) a démarré.**
 
@@ -116,6 +152,36 @@ Recherche effectuée le 30/06/2026 : aucun SIRET ni numéro d'élevage trouvé p
 - 39220 Bois d'Amont / secteur Metz (Jura) — une TROISIÈME adresse jamais mentionnée par le client jusqu'ici, à clarifier avec lui (erreur d'annuaire ? autre lieu d'activité ?)
 
 Ne pas publier la page mentions légales tant que ces informations n'ont pas été confirmées par Quentin directement.
+
+## Refonte visuelle en cours — Inspiration Esprit Dog (espritdog.com)
+
+Décision prise le 30/06/2026 : retravailler la direction visuelle du site pour un rendu plus moderne et "pleine page" en desktop, inspiré de la structure d'espritdog.com (uniquement l'aspect visuel/mise en page, PAS le contenu — Esprit Dog vend des formations en ligne, ce qui n'est pas notre sujet).
+
+Éléments à reproduire visuellement :
+- Hero en pleine largeur (pas de carte centrée limitée comme actuellement)
+- Bandeau de réassurance horizontal retravaillé, plus aéré, avec icônes plus visibles
+- Les 3 piliers (élevage/éducation/mushing) passent d'une grille de petites cartes côte à côte à des BLOCS ALTERNÉS plus larges (image + texte en alternance gauche/droite), façon storytelling, plutôt qu'une simple grille de cartes
+
+4 nouvelles photos préparées par le client, disponibles dans images/ :
+- hero-large.png : photo hero pleine largeur (16:9), Quentin + chiot primé (rosette Crufts) positionné à droite, espace dégagé à gauche pour texte/CTA
+- pilier-elevage.png : Quentin + sa meute de 5 huskies, format paysage
+- pilier-education.png : Quentin en complicité avec un chiot (front contre truffe), format paysage, ambiance forestière
+- pilier-mushing.png : Quentin en attelage de mushing dans la neige (3 huskies), positionné à droite, espace dégagé à gauche
+
+Conséquence sur les anciennes images : l'ancienne photo-hero-accueil.png (portrait 4:5) n'est plus utilisée comme photo principale du hero, mais reste disponible pour un usage futur (page Qui sommes-nous ou Palmarès par exemple). Les images story-meute.png, traineau.png, kart.png, velo.png, cani-rando.png restent utilisées telles quelles dans leurs sections actuelles (Story, cartes Activités).
+
+## Bandeau presse et réseaux sociaux — Preuve sociale
+
+Décision prise le 30/06/2026 : ajouter un bandeau de logos cliquables (presse + réseaux sociaux) sur la page d'accueil, façon réassurance média (inspiré du bandeau presse d'espritdog.com). 4 logos fournis par le client dans images/, chacun doit être cliquable et ouvrir son lien dans un nouvel onglet (target="_blank") :
+
+| Logo (fichier) | Lien de destination |
+|---|---|
+| logo-sudinfo.png | https://www.sudinfo.be/id840783/article/2024-05-27/wapi-le-husky-de-deux-ans-de-quentin-aubange-elu-plus-beau-male-la-plus-grande |
+| logo-dhsport.png | https://www.dhnet.be/regions/luxembourg/2026/04/09/quentin-de-schryver-reve-de-devenir-musher-professionnel-jaimerais-gagner-un-ou-deux-trophees-sur-la-grande-odyssee-JZBAMO7JO5ENFHJACAI4KMVM44/ |
+| logo-instagram.png | https://www.instagram.com/quentindeschryver/ |
+| logo-facebook.png | https://www.facebook.com/people/Wapidogs-Family-And-His-Theory/61567497037818/ |
+
+Les 2 premiers logos (Sudinfo, DH Les Sports+) renvoient vers de vrais articles de presse mentionnant Quentin et Wapi — bonne preuve sociale de crédibilité. Les 2 derniers (Instagram, Facebook) renvoient vers les comptes réseaux sociaux officiels.
 
 ## Tarifs — Éducation et comportementalisme
 
