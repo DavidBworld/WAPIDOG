@@ -226,7 +226,8 @@
           </div>
         </div>
       </div>
-      <form class="form-card" action="submit_contact.php" method="POST">
+      <form class="form-card" id="contact-form" action="submit_contact.php" method="POST">
+        <div id="form-ajax-message" style="display:none;"></div>
         <input type="hidden" name="type_demande" class="type_demande_input" value="chiot">
         <div id="form-chiot" class="form-content active">
           <h3>Réserver un chiot</h3>

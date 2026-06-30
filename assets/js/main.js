@@ -15,6 +15,7 @@ document.querySelectorAll('.contact-option').forEach(opt => {
       formCard.querySelectorAll('.form-content').forEach(form => {
         form.style.display = 'none';
         form.classList.remove('active');
+        form.querySelectorAll('input, select, textarea, button').forEach(el => el.disabled = true);
       });
       
       // Afficher le bon formulaire
@@ -22,6 +23,7 @@ document.querySelectorAll('.contact-option').forEach(opt => {
       if (targetForm) {
         targetForm.style.display = 'block';
         targetForm.classList.add('active');
+        targetForm.querySelectorAll('input, select, textarea, button').forEach(el => el.disabled = false);
       }
 
       // 3. Mettre à jour le champ caché type_demande (seulement pour chiot/bilan)
@@ -31,6 +33,13 @@ document.querySelectorAll('.contact-option').forEach(opt => {
       }
     }
   });
+});
+
+// --- INITIALISATION DU FORMULAIRE ---
+document.querySelectorAll('.form-card .form-content').forEach(form => {
+  if (!form.classList.contains('active')) {
+    form.querySelectorAll('input, select, textarea, button').forEach(el => el.disabled = true);
+  }
 });
 
 // --- GESTION DU MENU BURGER ---
@@ -95,3 +104,65 @@ window.addEventListener('scroll', () => {
     fadeObserver.observe(el);
   });
 })();
+
+// --- GESTION AJAX DU FORMULAIRE DE CONTACT ---
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const msgContainer = document.getElementById('form-ajax-message');
+    const activeFormContent = contactForm.querySelector('.form-content.active');
+    const submitBtn = activeFormContent ? activeFormContent.querySelector('.btn-submit') : contactForm.querySelector('.btn-submit');
+    const originalBtnText = submitBtn ? submitBtn.innerText : 'Envoyer ma demande';
+    
+    // UI Loading state
+    if (msgContainer) msgContainer.style.display = 'none';
+    if (submitBtn) {
+      submitBtn.innerText = 'Envoi en cours...';
+      submitBtn.disabled = true;
+    }
+    
+    const formData = new FormData(contactForm);
+    
+    fetch('submit_contact.php', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'X-Requested-With': 'XMLHttpRequest'
+      }
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (msgContainer) {
+        msgContainer.style.display = 'block';
+        msgContainer.className = data.status === 'success' ? 'msg-success' : 'msg-error';
+        msgContainer.innerText = data.message;
+      }
+      
+      if (data.status === 'success') {
+        contactForm.reset();
+        // Réinitialiser correctement l'état disabled des blocs inactifs
+        document.querySelectorAll('.form-card .form-content').forEach(form => {
+          if (!form.classList.contains('active')) {
+            form.querySelectorAll('input, select, textarea, button').forEach(el => el.disabled = true);
+          }
+        });
+      }
+    })
+    .catch(error => {
+      console.error("Erreur Fetch:", error);
+      if (msgContainer) {
+        msgContainer.style.display = 'block';
+        msgContainer.className = 'msg-error';
+        msgContainer.innerText = 'Une erreur réseau est survenue. Veuillez vérifier votre connexion.';
+      }
+    })
+    .finally(() => {
+      if (submitBtn) {
+        submitBtn.innerText = originalBtnText;
+        submitBtn.disabled = false;
+      }
+    });
+  });
+}
