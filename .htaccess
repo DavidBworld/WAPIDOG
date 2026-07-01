@@ -2,6 +2,7 @@
 Options -MultiViews
 
 RewriteEngine On
+RewriteBase /
 
 # 1. Rediriger proprement index.php vers la racine / (évite le duplicate content)
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
