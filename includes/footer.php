@@ -15,7 +15,7 @@
       <div>
         <h5>Nos activités</h5>
         <ul>
-          <li><a href="#">Élevage Husky</a></li>
+          <li><a href="elevage.php">Élevage Husky</a></li>
           <li><a href="education.php">Éducation canine</a></li>
           <li><a href="mushing.php">Mushing & forêt</a></li>
           <li><a href="blog.php">Blog</a></li>

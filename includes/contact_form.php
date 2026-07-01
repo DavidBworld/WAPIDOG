@@ -62,7 +62,7 @@
         <div id="form-mushing" class="form-content" style="display:none;">
           <h3>Bientôt disponible</h3>
           <p style="font-size:15px;line-height:1.6;color:var(--nuit-l);margin-bottom:24px;">Cette activité est encore en cours de structuration. Suivez nos sorties sur les réseaux sociaux ou contactez-nous directement pour plus d'informations.</p>
-          <a href="#" class="btn-primary" style="display:inline-flex;">Découvrir la page mushing</a>
+          <a href="mushing.php" class="btn-primary" style="display:inline-flex;">Découvrir la page mushing</a>
         </div>
       </form>
     </div>

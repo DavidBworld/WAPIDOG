@@ -729,6 +729,33 @@ a{color:inherit;text-decoration:none;}
   text-decoration: underline;
 }
 
+/* Composants Élevage (Meute) */
+.chien-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 32px;
+  align-items: start;
+  margin-bottom: 80px;
+}
+.chien-grid img {
+  width: 100%;
+  border-radius: var(--radius);
+  object-fit: cover;
+}
+.chien-subtitle {
+  font-style: italic;
+  color: var(--ambre);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  display: block;
+}
+@media (max-width: 1024px) and (orientation: portrait), (max-width: 768px) {
+  .chien-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Burger Menu Overlay */
 .mobile-menu-overlay {
   position: fixed; top: 0; left: 0; right: 0; bottom: 0;

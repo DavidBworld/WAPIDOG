@@ -8,8 +8,8 @@
       <h1>L'esprit du Grand Nord, <em>cultivé avec exigence</em></h1>
       <p class="lead">Chiots Husky sibérien LOF, éducation comportementale certifiée et sorties mushing en forêt, par un éleveur récompensé au Crufts et au World Dog Show.</p>
       <div class="hero-ctas">
-        <a class="btn-primary">Voir les chiots disponibles →</a>
-        <a class="btn-secondary">Découvrir nos sorties</a>
+        <a href="elevage.php" class="btn-primary">Voir les chiots disponibles →</a>
+        <a href="mushing.php" class="btn-secondary">Découvrir nos sorties</a>
       </div>
       <div class="hero-proof">
         <div class="proof-item"><strong>8 ans</strong>auprès des Huskies</div>
@@ -64,7 +64,7 @@
         <div class="num">01</div>
         <h3>Élevage de Husky sibérien</h3>
         <p>Lignées sport et beauté, parents testés et primés (Crufts, World Dog Show). Chiots sociabilisés, suivi à vie.</p>
-        <a class="link-more">Voir les portées disponibles →</a>
+        <a href="elevage.php" class="link-more">Voir les portées disponibles →</a>
       </div>
     </div>
 
@@ -76,7 +76,7 @@
         <div class="num">02</div>
         <h3>Éducation et comportement</h3>
         <p>Bilan comportemental, rééducation, conseils personnalisés — par un éducateur certifié (formation 100h).</p>
-        <a class="link-more">Réserver un bilan →</a>
+        <a href="education.php" class="link-more">Réserver un bilan →</a>
       </div>
     </div>
 
@@ -184,7 +184,7 @@
       </div>
       <div class="tarifs-note">Tarifs indicatifs, sur rendez-vous au Chemin (51800) ou à domicile selon disponibilité.</div>
       <div class="tarifs-cta">
-        <a class="btn-primary">Réserver mon bilan comportemental →</a>
+        <a href="education.php" class="btn-primary">Réserver mon bilan comportemental →</a>
       </div>
     </div>
   </div>
