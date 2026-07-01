@@ -1,14 +1,17 @@
+# Désactiver MultiViews pour empêcher le serveur de bloquer les règles mod_rewrite
+Options -MultiViews
+
 RewriteEngine On
 
 # 1. Rediriger proprement index.php vers la racine / (évite le duplicate content)
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
 RewriteRule ^index\.php$ https://wapidogs-family.fr/ [R=301,L]
 
-# 2. Supprimer l'extension .php de l'URL de manière générale
+# 2. Réécritures transparentes spécifiques pour nos silos SEO complexes
+RewriteRule ^education-comportement$ education.php [L,QSA]
+RewriteRule ^mushing-activites$ mushing.php [L,QSA]
+
+# 3. Supprimer l'extension .php de l'URL pour TOUTES les autres pages physiques existantes
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^([^/]+)$ $1.php [L]
-
-# 3. Réécritures transparentes existantes pour nos silos SEO
-RewriteRule ^education-comportement$ education.php [L,QSA]
-RewriteRule ^mushing-activites$ mushing.php [L,QSA]
