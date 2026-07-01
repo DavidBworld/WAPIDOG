@@ -1,7 +1,14 @@
 RewriteEngine On
 
-# Réécriture transparente pour le silo éducation et comportement
-RewriteRule ^education-comportement$ education.php [L,QSA]
+# 1. Rediriger proprement index.php vers la racine / (évite le duplicate content)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ https://wapidogs-family.fr/ [R=301,L]
 
-# Réécriture transparente pour le silo mushing et activités
+# 2. Supprimer l'extension .php de l'URL de manière générale
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^/]+)$ $1.php [L]
+
+# 3. Réécritures transparentes existantes pour nos silos SEO
+RewriteRule ^education-comportement$ education.php [L,QSA]
 RewriteRule ^mushing-activites$ mushing.php [L,QSA]
