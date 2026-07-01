@@ -99,10 +99,13 @@
   <div class="container">
     <div class="story-grid fade-in">
       <div class="story-photo">
-        <img src="images/story-meute.png" alt="Quentin et sa meute" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; border-radius: inherit; z-index: 0;">
+        <a href="palmares.php" style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;">
+          <img src="images/palmares-wapi.jpg" alt="Quentin et sa meute" style="width: 100%; height: 100%; object-fit: cover; object-position: center 20%; border-radius: inherit;">
+        </a>
         <div class="crufts-tag">🏆 Récompensé à Crufts, le plus grand concours canin du monde</div>
       </div>
       <div class="story-content">
+        <img src="images/logo-wapidogs.png" alt="" style="max-width:80px; margin-bottom:16px; display:block;">
         <div class="eyebrow"><span class="dot"></span>L'histoire de Wapi</div>
         <h2>Tout a commencé avec un Husky nommé Wapi</h2>
         <p>Passionné de chiens depuis l'enfance, Quentin De Schryver élève des Huskies sibériens depuis 8 ans. Son mâle Wapi est devenu le premier Husky de France à terminer Meilleur Mâle Husky au Crufts, après une 1ère place en classe au World Dog Show.</p>
@@ -112,6 +115,7 @@
           <div class="s"><strong>5+</strong><span>chiens adultes</span></div>
           <div class="s"><strong>2024</strong><span>Crufts, meilleur mâle</span></div>
         </div>
+        <a href="palmares.php" class="link-more" style="display:inline-block; margin-top:24px; font-weight:700; color:var(--bleu); font-size:14px;">Voir le palmarès complet →</a>
       </div>
     </div>
   </div>

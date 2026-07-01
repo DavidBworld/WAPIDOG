@@ -25,6 +25,7 @@
       <a href="mushing.php">Mushing & forêt</a>
       <a href="blog.php">Blog</a>
       <a href="qui-sommes-nous.php">Qui sommes-nous</a>
+      <a href="palmares.php">Le palmarès de Wapi</a>
     </nav>
 
     <a href="contact.php" class="cta-header">Nous contacter</a>
@@ -40,5 +41,6 @@
   <a href="mushing.php">Mushing & forêt</a>
   <a href="blog.php">Blog</a>
   <a href="qui-sommes-nous.php">Qui sommes-nous</a>
+  <a href="palmares.php">Le palmarès de Wapi</a>
   <a href="contact.php" style="color:var(--ambre);">Nous contacter</a>
 </div>

@@ -618,6 +618,117 @@ a{color:inherit;text-decoration:none;}
   margin-bottom: 12px;
 }
 
+/* Composant Citation */
+.about-quote {
+  font-family: 'Fraunces', serif;
+  font-size: 26px;
+  font-style: italic;
+  color: var(--nuit);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 16px auto;
+  line-height: 1.4;
+}
+.about-quote-author {
+  text-align: center;
+  font-size: 14px;
+  color: var(--gris);
+  margin-bottom: 32px;
+}
+
+/* Grille 2x2 pour les cartes activités */
+.activites-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+@media (max-width: 768px) {
+  .activites-grid {
+    grid-template-columns: 1fr;
+  }
+  .activites-grid .act-card img {
+    height: 220px;
+  }
+}
+
+.activites-grid .act-card img {
+  height: 320px;
+  object-fit: cover;
+}
+
+/* Composants Palmarès */
+.presse-image {
+  transform: rotate(-2deg);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+  border-radius: 4px;
+  max-width: 320px;
+  margin: 0 auto;
+  display: block;
+}
+.palmares-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  text-align: left;
+}
+.palmares-table th {
+  padding: 12px 16px;
+  border-bottom: 2px solid var(--gris-clair);
+  color: var(--nuit);
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+}
+.palmares-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--gris-clair);
+  color: var(--gris);
+}
+.palmares-table tr:last-child td {
+  border-bottom: none;
+}
+.palmares-row-highlight {
+  background-color: rgba(231,136,8,0.1);
+}
+.palmares-row-highlight td {
+  color: var(--nuit) !important;
+  font-weight: 700;
+}
+
+/* Pages Légales (Mentions & RGPD) */
+.legal-hero {
+  padding: 100px 0 40px;
+}
+@media (max-width: 1024px) {
+  .legal-hero {
+    padding: 90px 0 40px;
+  }
+}
+@media (max-width: 768px) {
+  .legal-hero {
+    padding: 80px 0 40px;
+  }
+}
+.legal-content h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  color: var(--nuit);
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+.legal-content p, .legal-content ul {
+  font-family: 'Manrope', sans-serif;
+  color: var(--gris);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+.legal-content li {
+  margin-bottom: 8px;
+}
+.legal-content a {
+  color: var(--bleu);
+  text-decoration: underline;
+}
+
 /* Burger Menu Overlay */
 .mobile-menu-overlay {
   position: fixed; top: 0; left: 0; right: 0; bottom: 0;
@@ -695,6 +806,7 @@ a{color:inherit;text-decoration:none;}
   .site-header .container { padding: 0 18px; }
   
   .hero{padding: 140px 0 60px; min-height: auto; background-position: 75% center;}
+  .hero-palmares { background-position: center center !important; }
   .hero h1{font-size:30px;}
   .hero .lead{font-size:16px;}
   .hero-proof{flex-wrap:wrap;gap:18px;}
@@ -744,6 +856,9 @@ a{color:inherit;text-decoration:none;}
     background-position: 75% center !important;
   }
   .story-photo img {
+    object-position: center top !important;
+  }
+  .img-palmares-wapi {
     object-position: center top !important;
   }
 }
