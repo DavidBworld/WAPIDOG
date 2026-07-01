@@ -1,31 +1,27 @@
 # Wapidogs Family — Contexte du projet
 
-## 📍 ÉTAT D'AVANCEMENT DÉTAILLÉ — au 30/06/2026, à lire en tout premier
+## 📍 ÉTAT D'AVANCEMENT DÉTAILLÉ — au 01/07/2026, à lire en tout premier
 
-**Résumé ultra-rapide** : la page d'accueil (`index.php`) est développée en PHP, fonctionne en local via XAMPP (`http://localhost/wapidogs/`), a traversé une refonte visuelle complète façon Esprit Dog (hero pleine largeur, blocs piliers alternés, bandeau presse), et plusieurs cycles de corrections fines. Le formulaire de contact (HTML) est prêt mais **pas encore branché à une vraie base de données** — c'est la prochaine étape technique. Aucune autre page que l'accueil n'a encore été créée.
+**Résumé ultra-rapide** : L'ensemble des pages statiques et dynamiques du site est désormais développé et fonctionnel en local via XAMPP. Le socle technique SEO est en place (.htaccess, robots.txt, sitemap). Le formulaire de contact est branché à la base de données locale (PDO) et envoie des emails via PHPMailer. Il ne reste plus que le déploiement sur Hostinger.
 
 ### Ce qui est fait et fonctionnel
-- Structure du projet PHP : `index.php`, `includes/header.php`, `includes/footer.php`, `assets/css/style.css`, `assets/js/main.js`, dossier `images/`
-- Jonction XAMPP créée : `C:\xampp\htdocs\wapidogs` pointe vers `C:\Users\david\Desktop\WAPIDOG` — le site est testable en local sur `http://localhost/wapidogs/`
-- La maquette HTML d'origine est isolée dans le dossier `maquette/` (fichiers `index.html` et `index-backup.html`), à ne pas confondre avec le vrai projet PHP
-- Header et footer communs en place (réutilisables pour les futures pages)
-- Formulaire de contact HTML complet avec tunnel à 3 options (chiot/bilan/mushing désactivé), balises `<form>` correctement fermées, champs `name`/`required` en place, champ caché `type_demande` mis à jour en JS selon l'option cliquée
-- Bug majeur résolu : un premier passage d'extraction de la maquette vers PHP via PowerShell avait corrompu l'encodage UTF-8 (accents cassés partout) — tout a été recréé proprement avec l'outil d'édition de fichier natif d'Antigravity, accents vérifiés et confirmés intacts
-- Refonte visuelle complète appliquée (voir section dédiée plus bas) : hero pleine largeur avec photo de fond, 3 piliers en blocs alternés (image/texte), bandeau de réassurance retravaillé, nouveau bandeau presse/réseaux sociaux avec 4 logos cliquables
-- Plusieurs cycles de corrections fines déjà faits : cadrage des photos (object-position ajusté sur plusieurs images dont hero et bloc Éducation), taille des logos presse, icône manquante "Le Chemin" dans la trust-bar restaurée et étendue à toutes les vues, tailles de texte et espacement du hero sur tablette, taille du logo dans le header (+50%, sans toucher à la hauteur du header)
-- Bandeau de présentation cosmétique (desktop/tablette/mobile avec boutons de bascule) retiré — le site est maintenant nativement responsive via media queries CSS (plus besoin de boutons pour changer de vue, ça se fait par la largeur réelle du navigateur)
-- Menu burger fonctionnel sur tablette et mobile (bug de menu qui s'ouvrait tout seul corrigé, bouton fermeture ✕ visible et fonctionnel)
+- Structure globale : `index.php`, `includes/header.php`, `includes/footer.php`, `assets/css/style.css`, `assets/js/main.js`, dossier `images/`
+- Formulaire de contact et BDD : Formulaire HTML complet avec tunnel à 3 options. Base de données MySQL locale (`wapidogs.contacts`). Script `submit_contact.php` opérationnel avec requêtes préparées (PDO via `includes/db.php`) et envoi d'emails (via PHPMailer et `includes/mail_config.php`).
+- Pages de contenu créées :
+  - `elevage.php` (présentation de la meute avec disposition en grille)
+  - `education.php` (services d'éducation)
+  - `mushing.php` (éditorial sur le mushing, sans formulaire commercial actif)
+  - `palmares.php` (tableau des prix et coupures presse)
+  - `qui-sommes-nous.php` (storytelling)
+  - `contact.php` (page dédiée de contact)
+  - `blog.php` et 3 articles (`blog-elevage.php`, `blog-education.php`, `blog-mushing.php`)
+  - `mentions-legales.php` et `rgpd.php` (accessibles depuis le footer, hero style sombre)
+- Refonte visuelle et navigation : Hero pleine largeur, piliers alternés, bandeau presse, header sticky fonctionnel, encart avis Google. Liens du menu principal et du pied de page mis à jour et fonctionnels.
+- Socle SEO : Création de `sitemap.xml`, `robots.txt` et d'un `.htaccess` pour les redirections transparentes des silos (`/education-comportement` vers `education.php`, etc.).
 
-### En cours / dernière action lancée (pas encore confirmée terminée)
-- Ajout d'un header sticky (reste fixe en haut au scroll, devient blanc avec ombre après 50px de scroll) — plan validé et envoyé à Antigravity, résultat pas encore vérifié visuellement par l'utilisateur
-- Ajout d'un encart "avis Google" dans le hero (image `google-avis.png` fournie par le client : logo Google + 5 étoiles, SANS préciser de nombre d'avis puisque Quentin n'a qu'1 seul avis pour l'instant) — même plan, même statut : envoyé mais pas encore vérifié
-
-### Pas encore commencé
-- Base de données MySQL (table `contacts`) — en local d'abord via phpMyAdmin/XAMPP, schéma déjà défini dans AGENTS.md (voir section Stack technique)
-- Script `submit_contact.php` (réception du POST, insertion en base, requêtes préparées PDO, envoi email à contact@wapidogs-family.fr, redirection avec message de succès)
-- Toutes les autres pages du site (élevage, éducation détaillée, mushing, qui-sommes-nous, palmarès, contact dédiée, blog + 3 articles, mentions légales, RGPD) — seule la page d'accueil existe à ce jour
-- Déploiement réel sur Hostinger (le domaine wapidogs-family.fr est acheté et l'hébergement créé sur le plan Business existant, mais rien n'y a encore été uploadé)
-- Configuration de l'email pro contact@wapidogs-family.fr sur Hostinger
+### Pas encore commencé / Prochaines étapes
+- Déploiement réel sur Hostinger (fichiers, création et importation de la BDD via phpMyAdmin Hostinger).
+- Configuration de l'email pro `contact@wapidogs-family.fr` sur Hostinger pour le passage en production du SMTP.
 
 ### Fichiers images déjà présents dans images/ (noms exacts)
 logo-wapidogs.png, photo-hero-accueil.png (ancienne, plus utilisée en hero), story-meute.png, traineau.png, kart.png, velo.png, cani-rando.png, hero-large.png, pilier-elevage.png, pilier-education.png, pilier-mushing.png, logo-sudinfo.png, logo-dhsport.png, logo-instagram.png, logo-facebook.png, google-avis.png

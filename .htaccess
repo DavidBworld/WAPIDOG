@@ -1,5 +1,5 @@
-# Désactiver MultiViews pour empêcher le serveur de bloquer les règles mod_rewrite
-Options -MultiViews
+# Autoriser la réécriture d'URL sur les sous-pages et désactiver MultiViews pour Hostinger
+Options +FollowSymLinks -MultiViews
 
 RewriteEngine On
 RewriteBase /
@@ -12,7 +12,12 @@ RewriteRule ^index\.php$ https://wapidogs-family.fr/ [R=301,L]
 RewriteRule ^education-comportement$ education.php [L,QSA]
 RewriteRule ^mushing-activites$ mushing.php [L,QSA]
 
-# 3. Supprimer l'extension .php de l'URL pour TOUTES les autres pages physiques existantes
+# 3. Réécritures transparentes spécifiques pour les 3 articles de blog séparés
+RewriteRule ^blog-elevage$ blog-elevage.php [L,QSA]
+RewriteRule ^blog-education$ blog-education.php [L,QSA]
+RewriteRule ^blog-mushing$ blog-mushing.php [L,QSA]
+
+# 4. Supprimer l'extension .php de l'URL pour TOUTES les autres pages physiques existantes (palmares, contact, blog, mentions, etc.)
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^([^/]+)$ $1.php [L]

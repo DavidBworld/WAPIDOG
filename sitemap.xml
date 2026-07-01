@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Page d'accueil active -->
+  <!-- Page d'accueil -->
   <url>
     <loc>https://wapidogs-family.fr/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-  <!-- Futures pages des silos SEO -->
+  <!-- Piliers Métiers -->
   <url>
     <loc>https://wapidogs-family.fr/elevage</loc>
     <lastmod>2026-07-01</lastmod>
@@ -26,28 +26,62 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Storytelling et Crédibilité -->
   <url>
     <loc>https://wapidogs-family.fr/qui-sommes-nous</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wapidogs-family.fr/palmares</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wapidogs-family.fr/contact</loc>
+    <loc>https://wapidogs-family.fr/palmares</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wapidogs-family.fr/contact</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Index du Blog -->
+  <url>
     <loc>https://wapidogs-family.fr/blog</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
+  </url>
+  <!-- Les 3 articles du Blog -->
+  <url>
+    <loc>https://wapidogs-family.fr/blog-elevage</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wapidogs-family.fr/blog-education</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wapidogs-family.fr/blog-mushing</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <!-- Pages Légales -->
+  <url>
+    <loc>https://wapidogs-family.fr/mentions-legales</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://wapidogs-family.fr/politique-confidentialite</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
