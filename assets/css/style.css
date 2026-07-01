@@ -599,6 +599,25 @@ a{color:inherit;text-decoration:none;}
 .tarifs-note{font-size:12px; color:#9aa7bd; margin-top:32px; text-align:center;}
 .tarifs-cta{text-align:center; margin-top:32px;}
 
+/* Utilitaire pour les blocs placés dans une colonne de texte */
+.edu-blocs-grid.vertical {
+  grid-template-columns: 1fr;
+}
+.process-steps.vertical {
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+.pilier-list {
+  text-align: left;
+  padding-left: 20px;
+  color: var(--gris);
+  margin: 0 auto 24px auto;
+  max-width: 480px;
+}
+.pilier-list li {
+  margin-bottom: 12px;
+}
+
 /* Burger Menu Overlay */
 .mobile-menu-overlay {
   position: fixed; top: 0; left: 0; right: 0; bottom: 0;
