@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Bloquer l'accès aux dossiers techniques sensibles
+Disallow: /includes/
+Disallow: /maquette/
+
+# Déclarer l'emplacement exact de la cartographie du site
+Sitemap: https://wapidogs-family.fr/sitemap.xml

@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Réécriture transparente pour le silo éducation et comportement
+RewriteRule ^education-comportement$ education.php [L,QSA]
+
+# Réécriture transparente pour le silo mushing et activités
+RewriteRule ^mushing-activites$ mushing.php [L,QSA]
